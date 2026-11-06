@@ -146,6 +146,12 @@ a { color: inherit; }
 .swatch-text p:last-child { margin: 0; font-size: 1rem; color: var(--muted); }
 .also { margin-top: 2rem; color: var(--muted); }
 
+.partners { max-width: var(--max); margin-inline: auto; padding: 0 var(--gutter) clamp(4rem, 3rem + 4vw, 6rem); }
+.partners-label { font: 500 0.9375rem/1.2 var(--display); color: var(--muted); letter-spacing: 0; margin-bottom: 1.25rem; padding-top: 2rem; border-top: 1px solid rgb(42 45 46 / 0.12); }
+.partner-logos { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 2.5rem 3.5rem; }
+.partner-logos img { display: block; height: 2.5rem; width: auto; }
+.partner-logos a { display: block; }
+
 .showroom {
   max-width: none;
   background: var(--verde); color: var(--calacatta);
