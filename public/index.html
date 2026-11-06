@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DVTile | Private tile and stone showroom in Toronto</title>
+<meta name="description" content="DVTile is a private, by-appointment tile and natural stone showroom at 44 Jackes Avenue, Toronto. Marble, travertine, zellige, terrazzo and large-format porcelain.">
+<meta name="theme-color" content="#F2F2EF">
+<link rel="canonical" href="https://dvtile.ca/">
+<meta property="og:title" content="DVTile | Private tile and stone showroom in Toronto">
+<meta property="og:description" content="See the stone before it's set. Visits by appointment at 44 Jackes Avenue.">
+<meta property="og:url" content="https://dvtile.ca/">
+<meta property="og:type" content="website">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeGoodsStore",
+  "name": "DVTile",
+  "legalName": "1000508858 Ontario Inc.",
+  "url": "https://dvtile.ca/",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "44 Jackes Avenue",
+    "addressLocality": "Toronto",
+    "addressRegion": "ON",
+    "addressCountry": "CA"
+  },
+  "description": "Private, by-appointment tile and natural stone showroom."
+}
+</script>
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <a class="wordmark" href="/" aria-label="DVTile home">DV<span>Tile</span></a>
+  <nav aria-label="Main">
+    <a href="#collection">Collection</a>
+    <a href="#showroom">Showroom</a>
+    <a href="#visit">Visit</a>
+  </nav>
+  <a class="btn btn-small" href="#visit">Book a visit</a>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <canvas class="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-copy">
+      <h1 id="hero-title">See the stone before it’s set.</h1>
+      <p class="lede">A private tile and stone showroom on Jackes Avenue, Toronto. Visits are by appointment, so the room is yours while you choose.</p>
+      <a class="btn" href="#visit">Book a private appointment</a>
+    </div>
+    <div class="picker" role="group" aria-label="Show the slabs in">
+      <span class="picker-label" id="picker-label">Show the slabs in</span>
+      <div class="picker-options" aria-labelledby="picker-label"></div>
+    </div>
+  </section>
+
+  <section class="collection" id="collection" aria-labelledby="collection-title">
+    <div class="section-head">
+      <h2 id="collection-title">The collection</h2>
+      <p>Natural stone, handmade tile and large-format porcelain, chosen for kitchens, baths, entries and the floors between them. Every surface here is shown as full pieces, not chips on a ring.</p>
+    </div>
+    <ul class="swatches"></ul>
+    <p class="also">Also in the showroom: large-format porcelain slabs, mosaics, and trim in brushed and unlacquered metals.</p>
+  </section>
+
+  <section class="showroom" id="showroom" aria-labelledby="showroom-title">
+    <div class="showroom-intro">
+      <h2 id="showroom-title">One project in the room at a time.</h2>
+      <p>Choosing stone for a home is slow work. Veining that looks quiet in a sample can run loud across a floor; a glaze changes colour between morning and evening light. We book one appointment at a time so you can lay pieces side by side, take them to the window, and hold them against your cabinetry and paint.</p>
+      <p>Interior designers and architects are welcome with their clients, or on their own with drawings in hand.</p>
+    </div>
+    <ol class="steps" aria-label="How a visit works">
+      <li>
+        <h3>Book a time</h3>
+        <p>Tell us about the rooms and your timeline. We confirm an appointment by email.</p>
+      </li>
+      <li>
+        <h3>Bring the project</h3>
+        <p>Plans, measurements, a cabinet door, a paint chip. We pull materials before you arrive.</p>
+      </li>
+      <li>
+        <h3>Leave with samples and a quote</h3>
+        <p>Take pieces home to see in your own light. Quantities and lead times follow in writing.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="visit" id="visit" aria-labelledby="visit-title">
+    <div class="visit-info">
+      <h2 id="visit-title">Visit the showroom</h2>
+      <address>
+        44 Jackes Avenue<br>
+        Toronto, Ontario
+      </address>
+      <p>In Deer Park, a short walk from St Clair station.</p>
+      <p><strong>By appointment only.</strong> Weekday, evening and Saturday times available on request.</p>
+      <p><a class="link" href="https://www.google.com/maps/search/?api=1&query=44+Jackes+Avenue+Toronto+ON" rel="noopener" target="_blank">Open in Google Maps</a></p>
+    </div>
+
+    <form class="form" id="appointment" novalidate>
+      <h3>Request an appointment</h3>
+      <div class="field">
+        <label for="f-name">Name</label>
+        <input id="f-name" name="name" autocomplete="name" required>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="f-email">Email</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="f-phone">Phone <span class="optional">(optional)</span></label>
+          <input id="f-phone" name="phone" type="tel" autocomplete="tel">
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="f-project">Project</label>
+          <select id="f-project" name="project">
+            <option>Kitchen</option>
+            <option>Bathroom or ensuite</option>
+            <option>Floors throughout</option>
+            <option>Whole-home renovation</option>
+            <option>New build</option>
+            <option>Trade or designer enquiry</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-date">Preferred date</label>
+          <input id="f-date" name="date" type="date">
+        </div>
+      </div>
+      <div class="field">
+        <label for="f-message">About the project <span class="optional">(optional)</span></label>
+        <textarea id="f-message" name="message" rows="4" placeholder="Rooms, rough square footage, materials you're drawn to, timeline."></textarea>
+      </div>
+      <div class="hp" aria-hidden="true"><label>Leave empty <input name="company" tabindex="-1" autocomplete="off"></label></div>
+      <button class="btn" type="submit">Request appointment</button>
+      <p class="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p class="wordmark" aria-hidden="true">DV<span>Tile</span></p>
+  <p>44 Jackes Avenue, Toronto, Ontario. By appointment.</p>
+  <p class="legal">DVTile is operated by 1000508858 Ontario Inc. © <span id="year">2026</span></p>
+</footer>
+
+<script type="module" src="/assets/main.js"></script>
+</body>
+</html>
