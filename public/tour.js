@@ -274,9 +274,18 @@
   });
 
   resize();
-  const io = new IntersectionObserver((entries) => {
-    if (entries.some((e) => e.isIntersecting)) { io.disconnect(); startLoading(); }
-  }, { rootMargin: "150% 0px" });
-  io.observe(tour);
+  // Frames are heavy (about 10 MB on phones). Load them on the visitor's first
+  // scroll, swipe or key press, or when the walkthrough is already on screen
+  // (a deep link or a reload partway down). Until then the poster stands in.
+  let started = false;
+  const begin = () => {
+    if (started) return;
+    started = true;
+    for (const ev of WAKE) removeEventListener(ev, begin);
+    startLoading();
+  };
+  const WAKE = ["scroll", "wheel", "touchstart", "keydown", "pointerdown"];
+  for (const ev of WAKE) addEventListener(ev, begin, { passive: true });
+  if (tour.getBoundingClientRect().top < innerHeight) begin();
   schedule();
 })();

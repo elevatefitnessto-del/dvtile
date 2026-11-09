@@ -19,12 +19,13 @@
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600&family=Pinyon+Script&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..400&display=swap">
-  <link rel="preload" as="image" href="/assets/house-bg.webp?v=1" fetchpriority="high">
-  <link rel="preload" as="image" href="/assets/house-fg.webp?v=1" fetchpriority="high">
-  <link rel="stylesheet" href="/styles.css?v=dv1">
-  <link rel="stylesheet" href="/tour.css?v=dv1">
-  <link rel="stylesheet" href="/site.css?v=dv1">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600&family=Pinyon+Script&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..400&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600&family=Pinyon+Script&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..400&display=swap"></noscript>
+  <link rel="preload" as="image" href="/assets/house-bg.webp?v=2" fetchpriority="high">
+  <link rel="preload" as="image" href="/assets/house-fg.webp?v=2" fetchpriority="high">
+  <link rel="stylesheet" href="/styles.css?v=dv2">
+  <link rel="stylesheet" href="/tour.css?v=dv2">
+  <link rel="stylesheet" href="/site.css?v=dv2">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -65,7 +66,7 @@
 
       <!-- Layer 1: full photo (sky + house) -->
       <div class="stage stage--bg" aria-hidden="true">
-        <img class="stage__img" src="/assets/house-bg.webp?v=1" width="1500" height="1200" alt="" decoding="async" fetchpriority="high">
+        <img class="stage__img" src="/assets/house-bg.webp?v=2" width="1500" height="1200" alt="" decoding="async" fetchpriority="high">
         <div class="stage__sky"></div>
       </div>
 
@@ -76,14 +77,14 @@
 
       <!-- Layer 3: house + trees cut out of the same photo -->
       <div class="stage stage--fg" aria-hidden="true">
-        <img class="stage__img" src="/assets/house-fg.webp?v=1" width="1500" height="1200" alt="" decoding="async" fetchpriority="high">
+        <img class="stage__img" src="/assets/house-fg.webp?v=2" width="1500" height="1200" alt="" decoding="async" fetchpriority="high">
       </div>
 
       <div class="hero__shade" aria-hidden="true"></div>
 
       <!-- Layer 4: interface -->
       <header class="nav" data-reveal>
-        <a class="brand" href="/" aria-label="DV Tile home">
+        <a class="brand" href="/" aria-label="DV TILE Don Valley Tile, home">
           <svg class="brand__mark" viewBox="0 0 100 100" aria-hidden="true"><defs><clipPath id="nav-mark"><rect x="4" y="4" width="44.5" height="44.5" rx="1.2"/><rect x="51.5" y="4" width="44.5" height="44.5" rx="1.2"/><rect x="4" y="51.5" width="44.5" height="44.5" rx="1.2"/><rect x="51.5" y="51.5" width="44.5" height="44.5" rx="1.2"/></clipPath></defs><g fill="#eceae4"><rect x="4" y="4" width="44.5" height="44.5" rx="1.2"/><rect x="51.5" y="4" width="44.5" height="44.5" rx="1.2"/><rect x="4" y="51.5" width="44.5" height="44.5" rx="1.2"/><rect x="51.5" y="51.5" width="44.5" height="44.5" rx="1.2"/></g><g clip-path="url(#nav-mark)"><path fill="#a9824f" d="M-2 19 C 28 13, 40 38, 50 49 C 60 60, 72 85, 102 79 L 102 83.5 C 69 91, 55 66, 46.5 55 C 37.5 43, 27 21, -2 24.5 Z"/><path fill="#bfa27a" d="M57 -2 C 59 15, 73 25, 102 22 L 102 23.6 C 71 27, 57 17, 55.4 -2 Z"/><path fill="#bfa27a" d="M-2 66 C 14 63, 24 70, 30 102 L 28.4 102 C 22.5 72, 13 65.5, -2 67.6 Z"/></g></svg>
           <span class="brand__words"><span class="brand__name">DV TILE</span><span class="brand__script">Don Valley Tile</span></span>
         </a>
@@ -147,7 +148,7 @@
     <section class="tour" id="tour" data-frames="281" data-version="2" aria-labelledby="tour-title">
       <div class="tour__sticky">
         <canvas class="tour__canvas" aria-hidden="true"></canvas>
-        <img class="tour__poster" src="/assets/tour/poster.webp?v=2" width="1600" height="900" alt="" decoding="async" loading="lazy">
+        <img class="tour__poster" src="/assets/tour/poster.webp?v=3" srcset="/assets/tour/poster-m.webp?v=3 640w, /assets/tour/poster.webp?v=3 1600w" sizes="100vw" width="1600" height="900" alt="" decoding="async" loading="lazy">
         <div class="tour__shade" aria-hidden="true"></div>
 
         <ol class="tour__beats">
@@ -456,10 +457,10 @@
     </div>
   </main>
   <a class="dock" href="#contact" hidden>Book a site visit</a>
-  <script src="/hero.js?v=dv1" defer></script>
-  <script src="/glass.js?v=dv1" defer></script>
-  <script src="/tour.js?v=dv1" defer></script>
-  <script src="/pager.js?v=dv1" defer></script>
-  <script src="/form.js?v=dv1" defer></script>
+  <script src="/hero.js?v=dv2" defer></script>
+  <script src="/glass.js?v=dv2" defer></script>
+  <script src="/tour.js?v=dv2" defer></script>
+  <script src="/pager.js?v=dv2" defer></script>
+  <script src="/form.js?v=dv2" defer></script>
 </body>
 </html>

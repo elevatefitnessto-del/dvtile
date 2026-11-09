@@ -1,0 +1,297 @@
+<title>DV Tile Website PRD</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Pinyon+Script&display=swap">
+<style>
+/* Layout: a single reading column with a sticky contents rail on wide screens. */
+:root {
+  --bg: #f2f2ef; --surface: #fbfbf9; --fg: #1f2423; --muted: #545a57;
+  --line: rgba(31, 36, 35, 0.14); --accent: #22403a; --bronze: #8c6b44; --tag: #e4e7e2;
+  --display: "Familjen Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --text: "Newsreader", Georgia, serif;
+  --script: "Pinyon Script", cursive;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #121a18; --surface: #18221f; --fg: #e9ebe6; --muted: #a7aea9;
+  --line: rgba(233, 235, 230, 0.14); --accent: #9fc3b6; --bronze: #c9a274; --tag: #22302c; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #121a18; --surface: #18221f; --fg: #e9ebe6; --muted: #a7aea9;
+  --line: rgba(233, 235, 230, 0.14); --accent: #9fc3b6; --bronze: #c9a274; --tag: #22302c; color-scheme: dark }
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font: 400 1.0625rem/1.65 var(--text); }
+.wrap { max-width: 72rem; margin: 0 auto; padding-block: 48px 96px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid; grid-template-columns: 14rem minmax(0, 1fr); gap: 56px; }
+header.doc { grid-column: 1 / -1; padding-bottom: 32px; border-bottom: 1px solid var(--line); }
+.brand { font: 600 0.9375rem/1 var(--display); letter-spacing: 0.18em; color: var(--accent); }
+.brand span { display: block; font: 400 1.25rem/1.2 var(--script); letter-spacing: 0; color: var(--bronze); }
+h1 { font: 500 clamp(2.4rem, 1.4rem + 3.6vw, 4.2rem)/1 var(--display); letter-spacing: -0.03em; margin: 28px 0 16px; text-wrap: balance; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px 24px; font: 500 0.875rem/1.4 var(--display); color: var(--muted); }
+nav.toc { position: sticky; top: calc(24px + env(safe-area-inset-top, 0px)); align-self: start; font: 500 0.875rem/1.4 var(--display); }
+nav.toc ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; counter-reset: s; }
+nav.toc li { counter-increment: s; }
+nav.toc a { display: flex; gap: 10px; padding: 6px 0; color: var(--muted); text-decoration: none; }
+nav.toc a::before { content: counter(s); color: var(--bronze); width: 1.4em; }
+nav.toc a:hover { color: var(--fg); }
+main { min-width: 0; counter-reset: sec; }
+section { padding: 8px 0 40px; border-bottom: 1px solid var(--line); margin-bottom: 40px; }
+h2 { font: 500 1.875rem/1.15 var(--display); letter-spacing: -0.02em; margin: 0 0 18px; text-wrap: balance; counter-increment: sec; }
+h2::before { content: counter(sec) "  "; color: var(--bronze); white-space: pre; }
+h3 { font: 600 1.125rem/1.3 var(--display); margin: 28px 0 8px; }
+p, li { max-width: 40em; }
+p { margin: 0 0 14px; }
+ul { padding-left: 1.2em; margin: 0 0 14px; }
+li { margin-bottom: 6px; }
+strong { font-weight: 500; color: var(--fg); }
+.tblwrap { overflow-x: auto; margin: 12px 0 18px; }
+table { border-collapse: collapse; width: 100%; min-width: 34rem; font-size: 0.9688rem; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px 10px 0; border-bottom: 1px solid var(--line); }
+th { font: 600 0.8125rem/1.3 var(--display); color: var(--muted); letter-spacing: 0.02em; }
+td:first-child { font-family: var(--display); font-weight: 500; white-space: nowrap; }
+.tag { display: inline-block; padding: 2px 9px; border-radius: 999px; background: var(--tag); font: 600 0.75rem/1.6 var(--display); color: var(--fg); white-space: nowrap; }
+.tag.p0 { background: var(--accent); color: var(--bg); }
+.tag.done { background: transparent; border: 1px solid var(--accent); color: var(--accent); }
+.callout { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 18px 20px; margin: 16px 0; }
+.callout p:last-child { margin: 0; }
+a { color: var(--accent); text-underline-offset: 0.2em; }
+a:focus-visible { outline: 2px solid var(--bronze); outline-offset: 3px; border-radius: 3px; }
+@media (max-width: 860px) { .wrap { grid-template-columns: 1fr; gap: 24px; } nav.toc { position: static; } }
+</style>
+
+<div class="wrap">
+  <header class="doc">
+    <div class="brand">DV TILE<span>Don Valley Tile</span></div>
+    <h1>dvtile.ca product requirements</h1>
+    <div class="meta"><span>Version 1.0</span><span>8 November 2026</span><span>Owner: DV Tile</span><span>Status: v1 built, in review</span></div>
+  </header>
+
+  <nav class="toc" aria-label="Contents">
+    <ol>
+      <li><a href="#summary">Summary</a></li>
+      <li><a href="#audience">Audience</a></li>
+      <li><a href="#goals">Goals and metrics</a></li>
+      <li><a href="#positioning">Positioning</a></li>
+      <li><a href="#brand">Brand identity</a></li>
+      <li><a href="#scope">Site structure</a></li>
+      <li><a href="#requirements">Requirements</a></li>
+      <li><a href="#content">Content and imagery</a></li>
+      <li><a href="#seo">Local SEO</a></li>
+      <li><a href="#tech">Technical</a></li>
+      <li><a href="#roadmap">Roadmap</a></li>
+      <li><a href="#risks">Risks and open questions</a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <section id="summary">
+      <h2>Summary</h2>
+      <p>dvtile.ca is the main sales tool for DV Tile (Don Valley Tile), a Toronto flooring contractor that installs marble, granite, natural stone, large-format porcelain and tile. The site exists to turn affluent GTA homeowners, and the designers and builders who work for them, into booked site visits.</p>
+      <p>Version 1 replaces a showroom-style page with a contractor site built around craftsmanship. It opens on a limestone manor at blue hour, walks the visitor through eight close-up installation details, and presents the full Olympia Tile + Stone catalogue as something DV Tile supplies and installs.</p>
+      <div class="callout"><p><strong>One job:</strong> a homeowner in Forest Hill, Rosedale or Oakville finishes the page believing DV Tile can be trusted with Calacatta in their ensuite, and books a site visit.</p></div>
+    </section>
+
+    <section id="audience">
+      <h2>Audience</h2>
+      <h3>Primary: affluent GTA homeowners</h3>
+      <ul>
+        <li>Owners of detached homes in Forest Hill, Rosedale, Lawrence Park, the Bridle Path, Hoggs Hollow, the Kingsway, Kleinburg, King City and Oakville.</li>
+        <li>Mid-renovation or planning one: ensuites, kitchens, whole-floor stone, terraces and pools. Often a new build or a gut renovation.</li>
+        <li>They buy on trust and evidence of care, not price. Their fear is a visible mistake in an expensive material: lippage, mismatched veins, a leaking shower.</li>
+        <li>They browse on a phone in the evening and come back on a laptop to decide.</li>
+      </ul>
+      <h3>Secondary: the trade</h3>
+      <ul>
+        <li>Interior designers and architects who need an installer who follows drawings and protects their reputation.</li>
+        <li>Custom home builders who need a reliable stone sub-trade with capacity.</li>
+      </ul>
+      <h3>What each needs from the site</h3>
+      <div class="tblwrap"><table>
+        <thead><tr><th>Visitor</th><th>Question they arrive with</th><th>Where the site answers it</th></tr></thead>
+        <tbody>
+          <tr><td>Homeowner</td><td>Will this look as good as the slab did?</td><td>Detail walkthrough, process, FAQ on flatness</td></tr>
+          <tr><td>Homeowner</td><td>Can they get the stone I want?</td><td>Olympia catalogue section</td></tr>
+          <tr><td>Homeowner</td><td>Do they work in my area?</td><td>Service areas, schema areaServed</td></tr>
+          <tr><td>Designer</td><td>Will they follow my layout and detailing?</td><td>Process, FAQ, trade line in contact</td></tr>
+          <tr><td>Builder</td><td>Can they price from drawings?</td><td>Contact copy, form project type</td></tr>
+        </tbody>
+      </table></div>
+    </section>
+
+    <section id="goals">
+      <h2>Goals and metrics</h2>
+      <div class="tblwrap"><table>
+        <thead><tr><th>Goal</th><th>Metric</th><th>Target (first 90 days)</th></tr></thead>
+        <tbody>
+          <tr><td>Generate qualified leads</td><td>Site visit requests submitted</td><td>Baseline in month 1, then +25% per quarter</td></tr>
+          <tr><td>Convert visitors</td><td>Form submissions ÷ unique visitors</td><td>2% or better</td></tr>
+          <tr><td>Win local search</td><td>Ranking for "marble floor installation Toronto" and neighbourhood variants</td><td>Top 10 in Google for 5 tracked terms</td></tr>
+          <tr><td>Engage with the work</td><td>Share of visitors who reach the last walkthrough stop</td><td>40% or better</td></tr>
+          <tr><td>Stay fast</td><td>Largest Contentful Paint on 4G mobile</td><td>Under 2.5 s</td></tr>
+        </tbody>
+      </table></div>
+      <p>Targets are proposals to confirm once a month of real traffic exists. Measuring them needs privacy-respecting analytics, which v1 deliberately does not include (see Roadmap).</p>
+    </section>
+
+    <section id="positioning">
+      <h2>Positioning</h2>
+      <p><strong>Statement:</strong> For GTA homeowners finishing a fine home in stone, DV Tile is the installation crew that treats a floor like joinery: laid out on paper first, prepared properly, and set flat to the millimetre, with the full Olympia range to choose from.</p>
+      <h3>Proof points the site must carry</h3>
+      <ul>
+        <li>A layout drawing and dry-laid slabs approved before any cut.</li>
+        <li>Lippage under a millimetre on large format, through levelling and full mortar coverage.</li>
+        <li>Showers waterproofed and flood-tested before tile.</li>
+        <li>One crew from preparation to sealing.</li>
+        <li>Official installation partner of Olympia Tile + Stone, plus Centura.</li>
+      </ul>
+      <h3>Voice</h3>
+      <p>Calm, specific, tradesman-precise. Talk in materials, millimetres and steps, never in superlatives. No invented statistics, testimonials or awards: add them only when they are real.</p>
+    </section>
+
+    <section id="brand">
+      <h2>Brand identity</h2>
+      <h3>Logo</h3>
+      <p>Four square tiles in a 2 × 2 grid with a bronze marble vein running through them in an S-curve, cut cleanly at each grout joint. The vein stands for the Don Valley and the parkway that follows it; matching it across four tiles shows the book-matching skill DV Tile sells. Wordmark: DV TILE in wide-tracked Familjen Grotesk, with Don Valley Tile in Pinyon Script beneath.</p>
+      <ul>
+        <li>Light backgrounds: green tiles, bronze vein. Dark backgrounds: pale marble tiles, bronze vein.</li>
+        <li>Files: <code>brand/mark.svg</code>, <code>brand/mark-reverse.svg</code>, and horizontal and stacked PNG lockups in <code>brand/</code>.</li>
+        <li>Clear space: the width of one tile on every side. Minimum mark size: 24 px.</li>
+      </ul>
+      <h3>Colour</h3>
+      <div class="tblwrap"><table>
+        <thead><tr><th>Token</th><th>Hex</th><th>Use</th></tr></thead>
+        <tbody>
+          <tr><td>Verde</td><td>#22403A</td><td>Primary brand, buttons, logo tiles</td></tr>
+          <tr><td>Verde deep</td><td>#182F2A</td><td>Product section, walkthrough fallback</td></tr>
+          <tr><td>Calacatta</td><td>#F2F2EF</td><td>Page surface</td></tr>
+          <tr><td>Graphite</td><td>#1F2423</td><td>Body text</td></tr>
+          <tr><td>Bronze</td><td>#8C6B44</td><td>Accent: vein, focus rings, step numbers</td></tr>
+          <tr><td>Travertine</td><td>#B8B2A6</td><td>Quiet dividers</td></tr>
+        </tbody>
+      </table></div>
+      <h3>Type</h3>
+      <p>Familjen Grotesk for display and interface, Newsreader for reading text and walkthrough titles, Pinyon Script only for the Don Valley Tile signature. All three are free under the SIL Open Font License.</p>
+    </section>
+
+    <section id="scope">
+      <h2>Site structure</h2>
+      <p>A single long page, in this order. Each section has an anchor for the nav and for sharing.</p>
+      <div class="tblwrap"><table>
+        <thead><tr><th>Section</th><th>Purpose</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>Hero</td><td>Set the register: limestone manor, DV TILE behind the roofline, glass nav, booking button</td><td><span class="tag done">Built</span></td></tr>
+          <tr><td>Detail walkthrough</td><td>Eight close-ups of craftsmanship, one per scroll</td><td><span class="tag done">Built</span></td></tr>
+          <tr><td>What we install</td><td>Eight services in plain language</td><td><span class="tag done">Built</span></td></tr>
+          <tr><td>Olympia products</td><td>Full catalogue by look, room, material, slab stone and finish, linked to Olympia</td><td><span class="tag done">Built</span></td></tr>
+          <tr><td>Process</td><td>Five steps from site visit to sealing</td><td><span class="tag done">Built</span></td></tr>
+          <tr><td>Where we work</td><td>GTA neighbourhoods</td><td><span class="tag done">Built</span></td></tr>
+          <tr><td>FAQ</td><td>Objections and search questions</td><td><span class="tag done">Built</span></td></tr>
+          <tr><td>Book a site visit</td><td>Form, address, trade note</td><td><span class="tag done">Built</span></td></tr>
+          <tr><td>Portfolio</td><td>Real completed projects</td><td><span class="tag">Phase 2</span></td></tr>
+        </tbody>
+      </table></div>
+    </section>
+
+    <section id="requirements">
+      <h2>Requirements</h2>
+      <h3>Functional</h3>
+      <div class="tblwrap"><table>
+        <thead><tr><th>ID</th><th>Requirement</th><th>Priority</th></tr></thead>
+        <tbody>
+          <tr><td>F1</td><td>Visitors can request a site visit with name, email, optional phone, project type, preferred date and notes. Requests arrive by email to the DV Tile inbox.</td><td><span class="tag p0">P0</span></td></tr>
+          <tr><td>F2</td><td>The form validates in place, explains errors next to the field, and confirms success in words.</td><td><span class="tag p0">P0</span></td></tr>
+          <tr><td>F3</td><td>A booking button is reachable from every screen: in the nav, at the end of the walkthrough, and floating once the hero is gone.</td><td><span class="tag p0">P0</span></td></tr>
+          <tr><td>F4</td><td>The walkthrough moves one detail per wheel turn, swipe or arrow key, then hands back normal scrolling.</td><td><span class="tag p0">P0</span></td></tr>
+          <tr><td>F5</td><td>Every Olympia category links to the matching page on olympiatile.com in a new tab.</td><td><span class="tag p0">P0</span></td></tr>
+          <tr><td>F6</td><td>Spam protection on the form without a visible challenge (honeypot field today).</td><td><span class="tag">P1</span></td></tr>
+          <tr><td>F7</td><td>Click-to-call phone number in nav, contact and footer.</td><td><span class="tag">P1</span></td></tr>
+          <tr><td>F8</td><td>Photo upload on the form (plans, current floor, inspiration).</td><td><span class="tag">P2</span></td></tr>
+        </tbody>
+      </table></div>
+      <h3>Experience and quality</h3>
+      <ul>
+        <li>Works from 360 px phones to 2560 px displays with no sideways scrolling.</li>
+        <li>WCAG 2.2 AA: 4.5:1 text contrast, visible focus rings, 44 px touch targets, labelled form fields, skip link.</li>
+        <li>Reduced motion: the walkthrough jumps between details and the hero shows without its entrance.</li>
+        <li>Without JavaScript, every caption and section is still readable in order.</li>
+        <li>No third-party trackers or chat widgets without an explicit decision.</li>
+      </ul>
+    </section>
+
+    <section id="content">
+      <h2>Content and imagery</h2>
+      <h3>v1 imagery</h3>
+      <p>The hero, rooms and close-ups are AI-rendered images of one concept home, generated with Higgsfield for consistency of light and materials. The footer states this. They show the standard of finish, not a completed DV Tile job.</p>
+      <h3>Walkthrough stops</h3>
+      <div class="tblwrap"><table>
+        <thead><tr><th>Stop</th><th>Detail</th><th>What it proves</th></tr></thead>
+        <tbody>
+          <tr><td>Entry hall</td><td>Waterjet marble medallion with brass ring</td><td>Custom floor design</td></tr>
+          <tr><td>Living room</td><td>Herringbone limestone to marble hearth, brass strip</td><td>Clean transitions</td></tr>
+          <tr><td>Kitchen</td><td>Book-matched quartzite backsplash with LED ledge</td><td>Slab backsplash and lighting</td></tr>
+          <tr><td>Powder room</td><td>Verde Alpi slab, stone basin, under-shelf LED</td><td>Mitred slab work</td></tr>
+          <tr><td>Primary shower</td><td>LED-lit custom niche, brass valve</td><td>Custom niches</td></tr>
+          <tr><td>Steam shower</td><td>Rainhead, handheld, linear drain, LED cove</td><td>Premium fixtures, waterproofing</td></tr>
+          <tr><td>Ensuite at night</td><td>Under-vanity and cove LED on marble</td><td>Lighting planned with stone</td></tr>
+          <tr><td>Pool terrace</td><td>Limestone coping, granite steps, LED step lights</td><td>Frost-rated outdoor stone</td></tr>
+        </tbody>
+      </table></div>
+      <h3>Phase 2: real work</h3>
+      <ul>
+        <li>Photograph every finished job: one wide, three details, one in raking light that proves flatness.</li>
+        <li>Replace concept frames with a real walkthrough once three strong projects exist.</li>
+        <li>Collect written client reviews with permission to publish name and neighbourhood.</li>
+      </ul>
+      <h3>Olympia content rules</h3>
+      <p>Use Olympia’s category names, product names and logo as their partner. Link to their pages for specifications and photos rather than copying descriptions or images, unless Olympia confirms in writing that dealers may reuse them.</p>
+    </section>
+
+    <section id="seo">
+      <h2>Local SEO</h2>
+      <ul>
+        <li>Title and description lead with "marble, stone and tile flooring contractor in Toronto".</li>
+        <li>Structured data: HomeAndConstructionBusiness with areaServed and services; FAQPage for the FAQ.</li>
+        <li>Claim and complete the Google Business Profile as DV Tile (Don Valley Tile), with the same name, address and phone as the site.</li>
+        <li>Phase 2: one page per high-value service (marble floors, shower tile, kitchen backsplash, heated floors) and per cluster of neighbourhoods, each with real project photos.</li>
+        <li>Earn links from Olympia’s installer listings, designer partners and local renovation guides.</li>
+      </ul>
+      <h3>Target terms</h3>
+      <p>marble floor installation Toronto; natural stone flooring contractor GTA; large format porcelain installer Toronto; luxury shower tile installation Toronto; kitchen backsplash installer Forest Hill; heated marble floors Toronto; stone flooring Oakville.</p>
+    </section>
+
+    <section id="tech">
+      <h2>Technical</h2>
+      <ul>
+        <li>Static HTML, CSS and JavaScript with no build step and no libraries, hosted on Vercel from the <code>elevatefitnessto-del/dvtile</code> repository; pushes to <code>main</code> deploy production.</li>
+        <li>Form: Vercel serverless function sending through Resend. Needs <code>RESEND_API_KEY</code>, <code>APPOINTMENTS_TO</code> and <code>APPOINTMENTS_FROM</code> set in the project.</li>
+        <li>Walkthrough: 281 WebP frames per orientation (about 24 MB landscape, 11 MB portrait), loaded coarse-first only when the walkthrough is near, cached as immutable.</li>
+        <li>Fonts from Google Fonts. Security headers for nosniff, referrer and permissions policy.</li>
+      </ul>
+    </section>
+
+    <section id="roadmap">
+      <h2>Roadmap</h2>
+      <div class="tblwrap"><table>
+        <thead><tr><th>Phase</th><th>Scope</th><th>Depends on</th></tr></thead>
+        <tbody>
+          <tr><td>1 (now)</td><td>Rebrand, hero, detail walkthrough, Olympia catalogue, FAQ, form, schema</td><td>Done; needs form email variables</td></tr>
+          <tr><td>1.1</td><td>Phone number, Google Business Profile, cookieless analytics (for example Vercel Web Analytics)</td><td>Owner decision on analytics</td></tr>
+          <tr><td>2</td><td>Portfolio with real projects, reviews, service and area pages</td><td>Photography of finished jobs</td></tr>
+          <tr><td>3</td><td>Trade portal: drawing upload, quote status, designer referral tracking</td><td>Lead volume justifying it</td></tr>
+        </tbody>
+      </table></div>
+    </section>
+
+    <section id="risks">
+      <h2>Risks and open questions</h2>
+      <ul>
+        <li><strong>Rendered imagery:</strong> buyers may assume the concept home is a real project. Mitigation: footer disclosure now, real photography in phase 2.</li>
+        <li><strong>Address:</strong> is 44 Jackes Avenue a place clients should visit, or a mailing address only?</li>
+        <li><strong>Phone:</strong> no number is published yet, and luxury buyers often call before they fill a form.</li>
+        <li><strong>Form delivery:</strong> confirm the three Resend variables are set in Vercel, then send a test request.</li>
+        <li><strong>Olympia assets:</strong> confirm whether Olympia allows partners to reuse product photography.</li>
+        <li><strong>Centura:</strong> no official Centura logo is in the repository; add one if they provide it.</li>
+        <li><strong>Page weight:</strong> walkthrough frames are heavy on cellular data. Watch real-user metrics and lower frame quality if needed.</li>
+      </ul>
+    </section>
+  </main>
+</div>
