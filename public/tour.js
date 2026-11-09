@@ -286,6 +286,7 @@
   };
   const WAKE = ["scroll", "wheel", "touchstart", "keydown", "pointerdown"];
   for (const ev of WAKE) addEventListener(ev, begin, { passive: true });
-  if (tour.getBoundingClientRect().top < innerHeight) begin();
+  // Already scrolled into the walkthrough (reload or deep link): load now.
+  if (tour.getBoundingClientRect().top < innerHeight * 0.5) begin();
   schedule();
 })();
