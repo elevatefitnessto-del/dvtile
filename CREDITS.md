@@ -10,6 +10,7 @@
 
 - "Finishes we install" gallery (`public/assets/work/`): supplied by DV Tile, November 2026. A mix of completed DV Tile installations and AI-generated design concepts; the section text says so. Four more Toronto interiors added from `tile pictures/` on the same basis.
 
+- Portfolio photos (`public/assets/portfolio/`): 50 images supplied by DV Tile on 8 November 2026, shown with the gallery's mixed installations-and-concepts note.
 - Service page images (`public/assets/services/`): Higgsfield concept renderings, captioned "Concept rendering" on each page.
 
 ## Partner marks
