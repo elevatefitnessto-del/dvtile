@@ -46,11 +46,8 @@
   --font-text: "Newsreader", Georgia, serif;
   --font-display: "Familjen Grotesk", "Helvetica Neue", Arial, sans-serif;
 
-  /* Geometry written by hero.js; these defaults match a 16:10 desktop. */
-  --sw: 100%;
-  --sh: 120%;
-  --sx: 0px;
-  --sy: -14%;
+  /* Hero photo geometry: hero.js writes exact values; the .hero defaults below
+     compute the same layout in CSS so the photo doesn't shift when it does. */
 }
 
 *,
@@ -79,6 +76,14 @@ p { margin: 0; }
 }
 
 .hero {
+  /* Mirrors layout() in hero.js for the 1536x1024 rooftop photo:
+     ASPECT 1.5, ROOF_Y 0.462, HOUSE_CX 0.6 (0.53 on phones), roof target 44% (53%). */
+  --hw: calc(100vw - 2 * var(--inset));
+  --hh: max(calc(100svh - 2 * var(--inset)), 520px);
+  --sw: max(var(--hw), calc(var(--hh) * 1.5));
+  --sh: calc(var(--sw) / 1.5);
+  --sx: clamp(calc(var(--hw) - var(--sw)), calc(var(--hw) / 2 - 0.6 * var(--sw)), 0px);
+  --sy: clamp(calc(var(--hh) - var(--sh)), calc(var(--hh) * 0.44 - 0.462 * var(--sh)), 0px);
   position: relative;
   isolation: isolate;
   height: calc(100svh - 2 * var(--inset));
@@ -641,8 +646,15 @@ p { margin: 0; }
   .index { top: calc(var(--pad-top) + 62px); }
 }
 
+@media (max-width: 699px) {
+  .hero {
+    --sx: clamp(calc(var(--hw) - var(--sw)), calc(var(--hw) / 2 - 0.53 * var(--sw)), 0px);
+    --sy: clamp(calc(var(--hh) - var(--sh)), calc(var(--hh) * 0.53 - 0.462 * var(--sh)), 0px);
+  }
+}
+
 @media (max-width: 600px) {
-  .hero { min-height: 600px; }
+  .hero { min-height: 600px; --hh: max(calc(100svh - 2 * var(--inset)), 600px); }
 
   /* The chips span the width under the nav, without the counts. */
   .index {

@@ -458,7 +458,6 @@
   background: var(--bronze); transform-origin: 0 50%; transform: scaleX(0); z-index: 1;
 }
 .process .steps li::before { opacity: var(--lit, 1); transition: none; }
-.process .steps li h3, .process .steps li p { opacity: calc(0.45 + var(--lit, 1) * 0.55); }
 
 .work__ideas { margin-top: clamp(56px, 7vw, 104px); }
 .work__ideas h3 { margin: 0 0 8px; font: 500 clamp(1.35rem, 2vw, 1.75rem)/1.2 var(--font-ui); }
