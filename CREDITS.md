@@ -17,7 +17,10 @@
 - Service page "More examples" images: generated locally with ComfyUI (Flux 2 Klein 4B), November 2026, labelled as concept renderings.
 
 ## Partner marks
+- Partner logos in the "Our Partners" strip are trademarks of their owners, shown as DV Tile's supply partners: Olympia Tile + Stone (`olympia-tile-stone.svg`), Centura (`centura.svg`, from centura.ca), Prosol (`prosol.webp`, from prosol.ca).
+
 - Olympia Tile + Stone logo (`public/assets/partners/`) is a trademark of Olympia Tile International Inc., used as their installation partner.
 
 ## Code
+- GSAP 3.12.5 and ScrollTrigger 3.12.5 (GreenSock, standard no-charge licence), loaded from cdnjs on the homepage for `public/motion.js`.
 - Page structure, glass navigation, scroll walkthrough and pager adapted from the Altura Coastal Residences template (HorizonX membership licence). No third-party libraries.

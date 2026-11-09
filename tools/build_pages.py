@@ -7,7 +7,7 @@ OUT = sys.argv[1]
 O = "https://www.olympiatile.com/en/"
 FONTS = "https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600&family=Pinyon+Script&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..400&display=swap"
 V = "dv8"
-PAGE_V = "dv12"
+PAGE_V = "dv13"
 JS_V = "dv11"
 HERE = os.path.dirname(os.path.abspath(__file__))
 JOBS = json.load(open(os.path.join(HERE, "data", "jobs.json")))
@@ -165,7 +165,7 @@ def head(title, desc, canon, extra_ld):
       <a href="/portfolio">Portfolio</a>
       <a href="/inspiration">Inspiration</a>
       <a href="/#services">Services</a>
-      <a href="/#materials">Products</a>
+      <a href="/#materials">Materials</a>
       <a href="/cost-guide">Cost guide</a>
     </nav>
     <a class="pg-tel" href="tel:+14379292563">437-929-2563</a>
@@ -175,7 +175,15 @@ def head(title, desc, canon, extra_ld):
 
 def foot():
     links = "".join(f'<li><a href="/{p["slug"]}">{p["nav"]}</a></li>' for p in PAGES)
-    return f'''  <footer class="pg-foot">
+    return f'''  <section class="partners" aria-labelledby="partners-title">
+    <p class="partners__label" id="partners-title">Our Partners</p>
+    <ul class="partners__logos">
+      <li><img src="/assets/partners/olympia-tile-stone.svg" alt="Olympia Tile + Stone" width="216" height="39" loading="lazy" decoding="async"></li>
+      <li><img src="/assets/partners/centura.svg" alt="Centura" width="200" height="20" loading="lazy" decoding="async"></li>
+      <li><img src="/assets/partners/prosol.webp" alt="Prosol" width="640" height="156" loading="lazy" decoding="async"></li>
+    </ul>
+  </section>
+  <footer class="pg-foot">
     <div class="pg-foot__inner">
       <div>
         <p class="footer__mark">DV TILE</p>
@@ -224,7 +232,7 @@ for p in PAGES:
       <{tag} class="pg-list{' pg-list--steps' if tag == 'ol' else ''}">{''.join(f'<li>{html.escape(x)}</li>' for x in items)}</{tag}>
     </section>
 '''
-    oly = "".join(f'<li><a href="{O}{u}" rel="noopener" target="_blank">{n}</a></li>' for n, u in p["olympia"])
+    oly = "".join(f'<li><span>{n}</span></li>' for n, u in p["olympia"])
     faqs = "".join(f'<details class="faq__item"><summary>{html.escape(q)}</summary><p>{html.escape(a)}</p></details>' for q, a in p["faq"])
     related = "".join(f'<li><a href="/{r["slug"]}">{r["nav"]}</a></li>' for r in PAGES if r is not p)
     if p["slug"] in RECENT:
@@ -247,9 +255,9 @@ for p in PAGES:
     </header>
 {figure(p["img"], p["alt"])}
     <div class="pg-body">
-{secs}    <section class="pg-sec pg-sec--olympia">
-      <h2>Choose from the Olympia range</h2>
-      <p>As an installation partner of Olympia Tile + Stone, we order, deliver and install anything in their catalogue. Start with these collections:</p>
+{secs}    <section class="pg-sec pg-sec--materials">
+      <h2>Materials we install</h2>
+      <p>Sourced through our supplier partners, or selected with your designer. We confirm every product with you before ordering.</p>
       <ul class="pg-chips">{oly}</ul>
     </section>
     <section class="pg-sec">

@@ -425,3 +425,41 @@
 .contact-tel a { color: var(--verde); text-decoration-color: var(--bronze); text-underline-offset: 0.2em; white-space: nowrap; }
 .footer a[href^="tel:"] { color: var(--graphite); white-space: nowrap; }
 @media (max-width: 600px) { .lede__links { justify-content: flex-start; } }
+
+/* Our Partners: official logos in one muted tone, full colour on hover */
+.partners {
+  display: grid; justify-items: center; gap: 18px;
+  padding: clamp(40px, 5vw, 64px) var(--pad-x) clamp(28px, 3vw, 40px);
+  border-top: 1px solid var(--line);
+}
+.partners__label {
+  margin: 0; font: 400 clamp(1.5rem, 1.1rem + 1vw, 2rem)/1 "Pinyon Script", cursive;
+  color: var(--bronze); letter-spacing: 0;
+}
+.partners__logos {
+  display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+  gap: clamp(20px, 4vw, 64px); margin: 0; padding: 0; list-style: none;
+}
+.partners__logos li { display: flex; align-items: center; height: 44px; }
+.partners__logos img {
+  display: block; width: auto; max-width: 180px; height: 26px;
+  filter: grayscale(1) contrast(1.1); opacity: 0.62;
+  transition: filter 0.3s var(--ease-soft), opacity 0.3s var(--ease-soft);
+}
+.partners__logos img[src*="centura"] { height: 18px; }
+.partners__logos img[src*="prosol"] { height: 30px; }
+.partners__logos li:hover img { filter: none; opacity: 1; }
+@media (prefers-reduced-motion: reduce) { .partners__logos img { transition: none; } }
+
+/* Process line (drawn by motion.js on desktop) */
+.process .steps { position: relative; }
+.steps__line {
+  position: absolute; left: 0; right: 0; top: -2px; height: 2px;
+  background: var(--bronze); transform-origin: 0 50%; transform: scaleX(0); z-index: 1;
+}
+.process .steps li::before { opacity: var(--lit, 1); transition: none; }
+.process .steps li h3, .process .steps li p { opacity: calc(0.45 + var(--lit, 1) * 0.55); }
+
+.work__ideas { margin-top: clamp(56px, 7vw, 104px); }
+.work__ideas h3 { margin: 0 0 8px; font: 500 clamp(1.35rem, 2vw, 1.75rem)/1.2 var(--font-ui); }
+.work__ideas > p { margin: 0 0 20px; max-width: 40rem; color: var(--muted); }

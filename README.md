@@ -9,6 +9,8 @@ Static site for DV Tile (Don Valley Tile), a marble, natural stone and tile floo
 - `public/tour.css` walkthrough layout and captions. `public/site.css` the sections below the walkthrough.
 - `public/hero.js` fits the DV TILE wordmark behind the house roof. If you replace `assets/hero-bg.webp` / `hero-fg.webp`, update `ASPECT`, `ROOF_Y`, `HOUSE_CX`, `CLIP_Y`, `SKY_L` and `SKY_R` at the top.
 - `public/tour.js` draws the walkthrough frames on a canvas as you scroll. `public/pager.js` pages one stop per scroll through the hero and walkthrough, then hands back normal scrolling.
+- `public/motion.js` scroll motion with GSAP + ScrollTrigger (loaded from cdnjs): heading reveals, Recent work photo reveal, the process line on desktop, partner logos, footer wordmark. Off for reduced motion; content stays visible if GSAP fails to load.
+- `brand/film/dv-tile-brand-film.md` a ready-to-run 15 s brand film prompt (motion-design skill, Blueprint to building preset).
 - `public/form.js` validates and posts the form to `/api/appointment`, and shows the floating booking button.
 - `public/assets/tour/d/` 281 landscape frames (1600 × 900), `public/assets/tour/m/` the same frames cropped portrait (640 × 1080). Frame count lives in `data-frames` on `#tour`; raise `data-version` when frames change.
 - `brand/` logo files: `mark.svg`, `mark-reverse.svg`, `logo.html` (source for the lockups) and rendered PNGs.

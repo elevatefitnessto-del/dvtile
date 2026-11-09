@@ -264,3 +264,33 @@ body.pg {
 .pg-nav .pg-tel { margin-left: 8px; }
 @media (max-width: 860px) { .pg-tel { margin-left: auto !important; } .pg-tel + .pg-cta { margin-left: 4px; } }
 @media (max-width: 520px) { .pg-tel { font-size: 0; padding: 0 10px; } .pg-tel::before { content: "Call"; font-size: 15px; } }
+
+/* Our Partners: official logos in one muted tone, full colour on hover */
+.partners {
+  display: grid; justify-items: center; gap: 18px;
+  padding: clamp(40px, 5vw, 64px) var(--pad-x) clamp(28px, 3vw, 40px);
+  border-top: 1px solid var(--line);
+}
+.partners__label {
+  margin: 0; font: 400 clamp(1.5rem, 1.1rem + 1vw, 2rem)/1 "Pinyon Script", cursive;
+  color: var(--bronze); letter-spacing: 0;
+}
+.partners__logos {
+  display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+  gap: clamp(20px, 4vw, 64px); margin: 0; padding: 0; list-style: none;
+}
+.partners__logos li { display: flex; align-items: center; height: 44px; }
+.partners__logos img {
+  display: block; width: auto; max-width: 180px; height: 26px;
+  filter: grayscale(1) contrast(1.1); opacity: 0.62;
+  transition: filter 0.3s var(--ease-soft), opacity 0.3s var(--ease-soft);
+}
+.partners__logos img[src*="centura"] { height: 18px; }
+.partners__logos img[src*="prosol"] { height: 30px; }
+.partners__logos li:hover img { filter: none; opacity: 1; }
+@media (prefers-reduced-motion: reduce) { .partners__logos img { transition: none; } }
+.pg-chips span {
+  display: inline-flex; align-items: center; min-height: 40px; padding: 0 16px;
+  border: 1px solid rgba(31, 36, 35, 0.18); border-radius: 999px;
+  font: 500 0.9375rem/1 var(--font-ui); color: var(--graphite);
+}
