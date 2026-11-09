@@ -8,7 +8,9 @@
 ## Images
 - Hero exterior, room stills, close-up details and the walkthrough video were generated for DV Tile with Higgsfield (GPT Image 2.6 and MiniMax H3 Max), November 2026. They depict a concept home, not a completed project.
 
-- "Finishes we install" gallery (`public/assets/work/`): supplied by DV Tile, November 2026. A mix of completed DV Tile installations and AI-generated design concepts; the section text says so.
+- "Finishes we install" gallery (`public/assets/work/`): supplied by DV Tile, November 2026. A mix of completed DV Tile installations and AI-generated design concepts; the section text says so. Four more Toronto interiors added from `tile pictures/` on the same basis.
+
+- Service page images (`public/assets/services/`): Higgsfield concept renderings, captioned "Concept rendering" on each page.
 
 ## Partner marks
 - Olympia Tile + Stone logo (`public/assets/partners/`) is a trademark of Olympia Tile International Inc., used as their installation partner.

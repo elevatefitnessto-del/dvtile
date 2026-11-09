@@ -34,7 +34,7 @@
       status.classList.add("error");
       status.textContent = firstBad.type === "email" && firstBad.value
         ? "Enter an email address like name@example.com."
-        : "Add your name and email so we can arrange the visit.";
+        : "Add your name and email so we can arrange the assessment.";
       firstBad.focus();
       return;
     }
@@ -49,7 +49,7 @@
       if (!res.ok) throw new Error(String(res.status));
       form.reset();
       status.classList.add("ok");
-      status.textContent = "Request sent. We’ll reply within one business day to arrange your site visit.";
+      status.textContent = "Request sent. We’ll reply within one business day to arrange your site assessment.";
     } catch {
       status.classList.add("error");
       status.textContent = "The request didn’t send. Check your connection and try again.";
