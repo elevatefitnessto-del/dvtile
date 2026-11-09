@@ -418,3 +418,10 @@
 .service-list h3 a::after { content: ""; display: inline-block; width: 0.45em; height: 0.45em; margin-left: 0.4em; border-top: 1.5px solid var(--bronze); border-right: 1.5px solid var(--bronze); transform: translateY(-0.1em) rotate(45deg); }
 .footer__links { display: flex; flex-wrap: wrap; gap: 4px 20px; margin: 16px 0 20px; padding: 0; list-style: none; }
 .footer__links a { display: inline-flex; min-height: 36px; align-items: center; color: var(--graphite); }
+
+/* Phone number */
+.lede__links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 4px 20px; }
+.contact-tel { font: 500 1.25rem/1.4 var(--font-ui); color: var(--graphite) !important; margin: 20px 0 0; }
+.contact-tel a { color: var(--verde); text-decoration-color: var(--bronze); text-underline-offset: 0.2em; white-space: nowrap; }
+.footer a[href^="tel:"] { color: var(--graphite); white-space: nowrap; }
+@media (max-width: 600px) { .lede__links { justify-content: flex-start; } }

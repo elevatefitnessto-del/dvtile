@@ -29,6 +29,6 @@ Set these in the Vercel project: `RESEND_API_KEY`, `APPOINTMENTS_TO` (the inbox 
 
 ## Before launch
 
-- Add a phone number to the contact section and footer if you take calls.
+- Phone: 437-929-2563 (call or text) is on every page and in the business schema.
 - Confirm the address at 44 Jackes Avenue is where you want clients to find you.
 - Recent work photographs are DV Tile jobs. The homepage footer says the walkthrough and finishes gallery mix earlier installations and design concepts. AI concepts and design references stay on the Inspiration page.

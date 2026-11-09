@@ -52,7 +52,7 @@
       status.textContent = "Request sent. We’ll reply within one business day to arrange your site assessment.";
     } catch {
       status.classList.add("error");
-      status.textContent = "The request didn’t send. Check your connection and try again.";
+      status.textContent = "The request didn’t send. Check your connection and try again, or call or text 437-929-2563.";
     } finally {
       btn.disabled = false;
       btn.textContent = label;

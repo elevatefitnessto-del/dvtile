@@ -7,7 +7,7 @@ OUT = sys.argv[1]
 O = "https://www.olympiatile.com/en/"
 FONTS = "https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600&family=Pinyon+Script&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..400&display=swap"
 V = "dv8"
-PAGE_V = "dv11"
+PAGE_V = "dv12"
 JS_V = "dv11"
 HERE = os.path.dirname(os.path.abspath(__file__))
 JOBS = json.load(open(os.path.join(HERE, "data", "jobs.json")))
@@ -168,6 +168,7 @@ def head(title, desc, canon, extra_ld):
       <a href="/#materials">Products</a>
       <a href="/cost-guide">Cost guide</a>
     </nav>
+    <a class="pg-tel" href="tel:+14379292563">437-929-2563</a>
     <a class="pg-cta" href="/#contact">Book a site assessment</a>
   </header>
 '''
@@ -180,6 +181,7 @@ def foot():
         <p class="footer__mark">DV TILE</p>
         <p class="footer__script">Don Valley Tile</p>
         <p class="pg-foot__addr">44 Jackes Avenue, Toronto, Ontario</p>
+        <p class="pg-foot__addr">Call or text <a href="tel:+14379292563">437-929-2563</a></p>
       </div>
       <nav aria-label="Services"><p class="pg-foot__h">Services</p><ul>{links}<li><a href="/cost-guide">Toronto cost guide</a></li><li><a href="/portfolio">Portfolio</a></li><li><a href="/inspiration">Inspiration</a></li></ul></nav>
     </div>
