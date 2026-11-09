@@ -56,7 +56,9 @@
         if (gen !== generation) return;
         frames[i] = img;
         if (Math.abs(i - wanted()) < 2) needsDraw = true;
-        if (!tour.classList.contains("is-live") && i === 0) { tour.classList.add("is-live"); needsDraw = true; }
+        // Hide the poster only once a frame near the camera can be drawn.
+        if (!tour.classList.contains("is-live") && Math.abs(i - wanted()) <= 24) { tour.classList.add("is-live"); needsDraw = true; }
+        if (needsDraw) schedule();
         pump();
       };
       img.onerror = () => { active--; pump(); };
