@@ -167,13 +167,60 @@ body.pg {
   border-radius: 8px; background: var(--travertine); text-decoration: none; color: #fff;
 }
 .pf-link img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.8s var(--ease-out); }
+.pf-link--full { aspect-ratio: auto; height: auto; color: inherit; background: #f4f1ea; }
+.pf-link--full img { width: 100%; height: auto; object-fit: contain; }
+.pf-link--full .pf-cap {
+  position: static; padding: 8px 2px 0; background: none;
+  color: var(--muted); text-shadow: none;
+}
 .pf-link:hover img { transform: scale(1.03); }
 .pf-badge {
   position: absolute; top: 10px; left: 10px; z-index: 1;
+  max-width: calc(100% - 20px);
   padding: 5px 9px; border-radius: 999px;
   background: rgba(20, 32, 29, 0.88); color: #fff;
-  font: 600 0.75rem/1 var(--font-ui); letter-spacing: 0.01em;
+  font: 600 0.75rem/1.3 var(--font-ui); letter-spacing: 0.01em;
 }
+.pf-badge--ai { background: rgba(88, 52, 24, 0.92); }
+.pf-badge--insp { border-radius: 10px; }
+.insp-note {
+  margin: 0 0 22px; padding: 14px 16px; border-radius: 10px;
+  background: rgba(169, 130, 79, 0.12); color: var(--graphite);
+  font: 500 0.9375rem/1.45 var(--font-ui);
+}
+.insp-mark {
+  display: grid; grid-template-columns: minmax(0, 220px) minmax(0, 1fr);
+  gap: 18px; align-items: center; margin: 0 0 28px;
+}
+.insp-mark img { width: 100%; height: auto; border-radius: 8px; background: #f4f1ea; }
+.insp-mark figcaption { margin: 0; color: var(--muted); font: 500 0.9375rem/1.45 var(--font-ui); }
+@media (max-width: 640px) { .insp-mark { grid-template-columns: 1fr; } }
+.motion-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
+  gap: 14px;
+  margin: 0 0 8px;
+}
+.motion-grid figure { margin: 0; }
+.motion-grid video {
+  width: 100%; height: auto; aspect-ratio: 720 / 960;
+  background: #14201d; border-radius: 8px; display: block;
+}
+.motion-grid figcaption { margin-top: 8px; color: var(--muted); font: 500 0.875rem/1.4 var(--font-ui); }
+.motion-grid h3, .insp-sub { margin: 28px 0 8px; font: 500 1.25rem/1.3 var(--font-ui); }
+.motion-lead { margin: 0 0 22px; max-width: 56rem; }
+.motion-lead video, .motion-one video {
+  width: 100%; height: auto; background: #14201d; border-radius: 8px; display: block;
+}
+.motion-lead video { aspect-ratio: 16 / 9; }
+.motion-lead figcaption, .motion-one figcaption { margin-top: 8px; color: var(--muted); font: 500 0.875rem/1.4 var(--font-ui); }
+.motion-one { max-width: 280px; }
+.pf-lib { margin: 0 0 36px; }
+.pf-lib figure { margin: 0; }
+.pf-lib .pf-grid { align-items: start; }
+.pf-lib video { width: 100%; height: auto; display: block; background: #14201d; border-radius: 8px; }
+.pf-lib figcaption { margin-top: 8px; color: var(--muted); font: 500 0.8125rem/1.35 var(--font-ui); }
+.pf-item--lead { grid-column: 1 / -1; max-width: 56rem; }
 .pf-cap {
   position: absolute; left: 0; right: 0; bottom: 0; padding: 36px 14px 12px;
   background: linear-gradient(0deg, rgba(14, 20, 18, 0.75), rgba(14, 20, 18, 0));
