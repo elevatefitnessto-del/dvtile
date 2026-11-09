@@ -140,7 +140,7 @@ p { margin: 0; }
   font-size: var(--wm-size, 30vw);
   line-height: 1;
   letter-spacing: 0.04em;
-  color: var(--ink);
+  color: var(--verde-deep); /* deep green reads against the bright sunset sky */
   white-space: nowrap;
   transform: translate(var(--wm-x, 6vw), var(--wm-y, 10vh));
   pointer-events: none;

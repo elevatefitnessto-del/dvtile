@@ -237,3 +237,13 @@ html:not(.js) .tour__sticky { position: relative; height: auto; min-height: 0; p
 html:not(.js) .tour__beats { position: relative; display: grid; gap: 64px; }
 html:not(.js) .beat { position: relative; inset: auto; translate: none; --o: 1; --b: 0px; --y: 0px; }
 html:not(.js) .beat--intro { place-content: start; justify-items: start; text-align: left; padding: 0; }
+
+/* Phones: extra shade behind the centred intro and closing captions, which sit over bright windows. */
+@media (max-width: 600px) {
+  .beat--intro, .beat--end { text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55), 0 2px 24px rgba(0, 0, 0, 0.5); }
+  .tour__shade::after {
+    content: ""; position: absolute; inset: 0;
+    background: radial-gradient(ellipse 90% 40% at 50% 48%, rgba(10, 8, 6, 0.42), rgba(10, 8, 6, 0) 75%);
+    opacity: var(--center-shade, 0); transition: opacity 0.4s var(--ease-soft);
+  }
+}

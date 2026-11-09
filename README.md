@@ -7,7 +7,7 @@ Static site for DV Tile (Don Valley Tile), a marble, natural stone and tile floo
 - `public/index.html` the page: hero, detail walkthrough, services, Olympia product catalogue, process, areas, FAQ, contact form.
 - `public/styles.css` hero, navigation and glass styles. Brand colours and fonts are the variables in the `:root` block at the top.
 - `public/tour.css` walkthrough layout and captions. `public/site.css` the sections below the walkthrough.
-- `public/hero.js` fits the DV TILE wordmark behind the house roof. If you replace `assets/house-bg.webp` / `house-fg.webp`, update `ASPECT`, `ROOF_Y`, `HOUSE_CX`, `CLIP_Y` at the top.
+- `public/hero.js` fits the DV TILE wordmark behind the house roof. If you replace `assets/hero-bg.webp` / `hero-fg.webp`, update `ASPECT`, `ROOF_Y`, `HOUSE_CX`, `CLIP_Y`, `SKY_L` and `SKY_R` at the top.
 - `public/tour.js` draws the walkthrough frames on a canvas as you scroll. `public/pager.js` pages one stop per scroll through the hero and walkthrough, then hands back normal scrolling.
 - `public/form.js` validates and posts the form to `/api/appointment`, and shows the floating booking button.
 - `public/assets/tour/d/` 281 landscape frames (1600 × 900), `public/assets/tour/m/` the same frames cropped portrait (640 × 1080). Frame count lives in `data-frames` on `#tour`; raise `data-version` when frames change.

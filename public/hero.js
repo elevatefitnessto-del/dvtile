@@ -10,11 +10,13 @@
 
   root.classList.add("js");
 
-  // Photo geometry, in fractions of the 1500x1200 source.
-  const ASPECT = 1500 / 1200;
-  const ROOF_Y = 0.501; // top edge of the roof slab
-  const HOUSE_CX = 0.5; // horizontal centre of the house
-  const CLIP_Y = 0.512; // just below the lowest roof edge; hides letter slivers in the side gaps
+  // Photo geometry, in fractions of the 1536x1024 rooftop source.
+  const ASPECT = 1536 / 1024;
+  const ROOF_Y = 0.462; // skyline height // top edge of the roof slab
+  const HOUSE_CX = 0.6; // centre of the open sky, right of the glass tower // horizontal centre of the house
+  const CLIP_Y = 0.495; // just below the tallest skyline buildings
+  const SKY_L = 0.27; // right edge of the glass tower on the left
+  const SKY_R = 0.97; // just below the lowest roof edge; hides letter slivers in the side gaps
 
   const clamp = (v, min, max) => Math.min(Math.max(v, min), max);
 
@@ -40,7 +42,7 @@
     const sh = sw / ASPECT;
     const roofTarget = H * (mobile ? 0.53 : 0.44);
     const sy = clamp(roofTarget - ROOF_Y * sh, H - sh, 0);
-    const sx = clamp(W / 2 - HOUSE_CX * sw, W - sw, 0);
+    const sx = clamp(W / 2 - (mobile ? 0.53 : HOUSE_CX) * sw, W - sw, 0); // on phones the tower falls between V and T
     const roof = sy + ROOF_Y * sh;
 
     hero.style.setProperty("--sw", `${sw}px`);
@@ -52,8 +54,11 @@
 
     // Size the wordmark to the width first, then cap it so the tallest
     // letters stay clear of the navigation.
-    const sideMargin = W * (mobile ? 0.05 : Math.max(0.06, 0.5 - (sh * ASPECT * 0.36) / W)); // keep the letters between the two maples
-    const targetWidth = W - sideMargin * 2;
+    // The open sky runs from the glass tower (SKY_L) to the right edge (SKY_R) of the photo.
+    // Fit the letters inside the part of that sky that is on screen.
+    const skyL = Math.max(sx + SKY_L * sw, W * (mobile ? 0.07 : 0.03));
+    const skyR = Math.min(sx + SKY_R * sw, W * (mobile ? 0.93 : 0.97));
+    const targetWidth = Math.max(skyR - skyL, W * 0.5);
     wordmark.style.setProperty("--wm-size", "100px");
     const widthAt100 = wordmark.querySelector(".wordmark__line").getBoundingClientRect().width;
     let size = (targetWidth / widthAt100) * 100;
@@ -83,7 +88,7 @@
     probe.remove();
 
     const wmWidth = lineRect.width;
-    const wmX = (W - wmWidth) / 2;
+    const wmX = clamp((skyL + skyR) / 2 - wmWidth / 2, W * 0.02, W - wmWidth - W * 0.02);
     const wmY = baseline - baselineInBox;
     wordmark.style.setProperty("--wm-x", `${wmX}px`);
     wordmark.style.setProperty("--wm-y", `${wmY}px`);

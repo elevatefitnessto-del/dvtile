@@ -13,6 +13,9 @@
 - Portfolio photos (`public/assets/portfolio/`): 50 images supplied by DV Tile on 8 November 2026, shown with the gallery's mixed installations-and-concepts note.
 - Service page images (`public/assets/services/`): Higgsfield concept renderings, captioned "Concept rendering" on each page.
 
+- Hero (`public/assets/hero-bg.webp`, `hero-fg.webp`) and walkthrough frames (`public/assets/tour/`): built from photos supplied by DV Tile on 8–9 November 2026 (rooftop terrace with the CN Tower; eight interiors from entry to pool). The walkthrough is a push-in and dissolve sequence rendered from those stills. Shown under the site's mixed installations-and-concepts note.
+- Service page "More examples" images: generated locally with ComfyUI (Flux 2 Klein 4B), November 2026, labelled as concept renderings.
+
 ## Partner marks
 - Olympia Tile + Stone logo (`public/assets/partners/`) is a trademark of Olympia Tile International Inc., used as their installation partner.
 

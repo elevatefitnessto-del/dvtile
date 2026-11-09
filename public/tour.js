@@ -233,6 +233,7 @@
       const [x, y] = SHADE[kind] || SHADE["beat--intro"];
       sticky.style.setProperty("--shade-x", x);
       sticky.style.setProperty("--shade-y", y);
+      sticky.style.setProperty("--center-shade", kind === "beat--intro" || kind === "beat--end" ? "1" : "0");
     }
   };
 
