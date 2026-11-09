@@ -10,7 +10,7 @@
 
 - "Finishes we install" gallery (`public/assets/work/`): supplied by DV Tile, November 2026. A mix of completed DV Tile installations and AI-generated design concepts; the section text says so. Four more Toronto interiors added from `tile pictures/` on the same basis.
 
-- Portfolio photos (`public/assets/portfolio/`): 50 images supplied by DV Tile on 8 November 2026, shown with the gallery's mixed installations-and-concepts note.
+- Portfolio photos (`public/assets/portfolio/`): 103 images supplied by DV Tile on 8–9 November 2026 (p, q and r series), shown with the gallery's mixed installations-and-concepts note.
 - Service page images (`public/assets/services/`): Higgsfield concept renderings, captioned "Concept rendering" on each page.
 
 - Hero (`public/assets/hero-bg.webp`, `hero-fg.webp`) and walkthrough frames (`public/assets/tour/`): built from photos supplied by DV Tile on 8–9 November 2026 (rooftop terrace with the CN Tower; eight interiors from entry to pool). The walkthrough is a push-in and dissolve sequence rendered from those stills. Shown under the site's mixed installations-and-concepts note.
