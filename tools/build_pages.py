@@ -7,6 +7,8 @@ OUT = sys.argv[1]
 O = "https://www.olympiatile.com/en/"
 FONTS = "https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600&family=Pinyon+Script&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..400&display=swap"
 V = "dv8"
+PAGE_V = "dv11"
+JS_V = "dv11"
 HERE = os.path.dirname(os.path.abspath(__file__))
 JOBS = json.load(open(os.path.join(HERE, "data", "jobs.json")))
 RECENT = json.load(open(os.path.join(HERE, "data", "service_recent.json")))
@@ -152,7 +154,7 @@ def head(title, desc, canon, extra_ld):
   <noscript><link rel="stylesheet" href="{FONTS}"></noscript>
   <link rel="stylesheet" href="/styles.css?v={V}">
   <link rel="stylesheet" href="/site.css?v={V}">
-  <link rel="stylesheet" href="/page.css?v={V}">
+  <link rel="stylesheet" href="/page.css?v={PAGE_V}">
   <script type="application/ld+json">{json.dumps(extra_ld, ensure_ascii=False)}</script>
 </head>
 <body class="pg">
@@ -161,6 +163,7 @@ def head(title, desc, canon, extra_ld):
     <a class="pg-brand" href="/">{MARK}<span class="pg-brand__words"><span class="pg-brand__name">DV TILE</span> <span class="pg-brand__script">Don Valley Tile</span></span></a>
     <nav class="pg-nav__links" aria-label="Primary">
       <a href="/portfolio">Portfolio</a>
+      <a href="/inspiration">Inspiration</a>
       <a href="/#services">Services</a>
       <a href="/#materials">Products</a>
       <a href="/cost-guide">Cost guide</a>
@@ -178,7 +181,7 @@ def foot():
         <p class="footer__script">Don Valley Tile</p>
         <p class="pg-foot__addr">44 Jackes Avenue, Toronto, Ontario</p>
       </div>
-      <nav aria-label="Services"><p class="pg-foot__h">Services</p><ul>{links}<li><a href="/cost-guide">Toronto cost guide</a></li><li><a href="/portfolio">Portfolio</a></li></ul></nav>
+      <nav aria-label="Services"><p class="pg-foot__h">Services</p><ul>{links}<li><a href="/cost-guide">Toronto cost guide</a></li><li><a href="/portfolio">Portfolio</a></li><li><a href="/inspiration">Inspiration</a></li></ul></nav>
     </div>
     <p class="legal">DV Tile is operated by 1000508858 Ontario Inc. Images on this page are concept renderings of finishes we install.</p>
   </footer>
@@ -226,11 +229,11 @@ for p in PAGES:
         secs += RECENT[p["slug"]]["html"]
     extra = EXTRA.get(p["img"], [])
     if extra:
-        figs = "".join(f'<figure><img src="/assets/services/{k}-800.webp" srcset="/assets/services/{k}-800.webp 800w, /assets/services/{k}.webp 1344w" sizes="(max-width: 700px) 100vw, 50vw" width="1344" height="768" alt="{html.escape(a)}" loading="lazy" decoding="async"><figcaption>{html.escape(a)}</figcaption></figure>' for k, a in extra)
+        figs = "".join(f'<figure><img src="/assets/services/{k}-800.webp" srcset="/assets/services/{k}-800.webp 800w, /assets/services/{k}.webp 1344w" sizes="(max-width: 700px) 100vw, 50vw" width="1344" height="768" alt="{html.escape("AI-generated design concept. " + a)}" loading="lazy" decoding="async"><figcaption>{html.escape("AI-generated design concept. " + a)}</figcaption></figure>' for k, a in extra)
         secs += f'''    <section class="pg-sec pg-sec--more">
       <h2>More examples</h2>
       <div class="pg-more">{figs}</div>
-      <p class="pg-more__note">Concept renderings of finishes we install.</p>
+      <p class="pg-more__note">AI-generated design concept. Not a completed DV Tile installation.</p>
     </section>
 '''
     body = f'''  <main id="main" class="pg-main">
@@ -258,7 +261,7 @@ for p in PAGES:
 '''
     page = head(p["title"], p["desc"], p["slug"], ld) + body + foot()
     if p["slug"] in RECENT:
-        page = page.replace("Images on this page are concept renderings of finishes we install.", "Recent installations are photographs of DV Tile jobs. The other images are concept renderings of finishes we install.")
+        page = page.replace("Images on this page are concept renderings of finishes we install.", "Recent installations are photographs of DV Tile jobs. The other images are concept renderings or AI-generated design concepts, not completed installations.")
     open(f'{OUT}/{p["slug"]}.html', 'w').write(page)
 
 # Cost guide
@@ -311,7 +314,7 @@ open(f'{OUT}/cost-guide.html', 'w').write(head("Tile and Stone Installation Cost
     "cost-guide", ld) + body + foot())
 
 # sitemap
-urls = ["", "portfolio", *[p["slug"] for p in PAGES], "cost-guide"]
+urls = ["", "portfolio", "inspiration", *[p["slug"] for p in PAGES], "cost-guide"]
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
     f'  <url><loc>https://dvtile.ca/{u}</loc><lastmod>2026-11-09</lastmod></url>\n' for u in urls) + '</urlset>\n'
 open(f'{OUT}/sitemap.xml', 'w').write(sm)
@@ -406,7 +409,7 @@ body = f'''  <main id="main" class="pg-main pg-main--wide">
     <nav class="pg-crumbs" aria-label="Breadcrumb"><a href="/">DV Tile</a><span aria-hidden="true">/</span><span aria-current="page">Portfolio</span></nav>
     <header class="pg-hero">
       <h1>Portfolio</h1>
-      <p class="pg-lede">Bathrooms and showers, kitchens and backsplashes, floors and entries, fireplaces and outdoor stone. Photos marked Recent work are DV Tile jobs, including prep and waterproofing. The rest mix earlier installations with design concepts of finishes we offer.</p>
+      <p class="pg-lede">Bathrooms and showers, kitchens and backsplashes, floors and entries, fireplaces and outdoor stone. Photos marked Recent work are DV Tile jobs, including prep and waterproofing. The rest mix earlier installations with design concepts of finishes we offer. Generated studies, design references, and promotional ads are on the <a href="/inspiration">inspiration page</a>, not in this portfolio.</p>
     </header>
     <div class="pf-filters" role="group" aria-label="Filter by room">{btns}</div>
     <p class="pf-count" aria-live="polite">Showing {total} photos</p>
@@ -420,9 +423,11 @@ body = f'''  <main id="main" class="pg-main pg-main--wide">
     <img alt="">
     <p class="pf-dialog__cap"></p>
   </dialog>
-  <script src="/portfolio.js?v={V}" defer></script>
+  <script src="/portfolio.js?v={JS_V}" defer></script>
 '''
-open(f'{OUT}/portfolio.html', 'w').write(head("Tile and Stone Installation Portfolio | DV Tile Toronto",
+portfolio_page = head("Tile and Stone Installation Portfolio | DV Tile Toronto",
     "Bathrooms, showers, kitchen backsplashes, marble floors, fireplaces, terraces and pools: tile and stone finishes installed by DV Tile across Toronto and the GTA.",
-    "portfolio", ld) + body + foot().replace("Images on this page are concept renderings of finishes we install.", "Photos marked Recent work are DV Tile jobs. The rest of this portfolio mixes earlier installations and design concepts."))
+    "portfolio", ld) + body + foot().replace("Images on this page are concept renderings of finishes we install.", "Photos marked Recent work are DV Tile jobs. The rest of this portfolio mixes earlier installations and design concepts.")
+portfolio_page = portfolio_page.replace('<a href="/portfolio">Portfolio</a>', '<a href="/portfolio" aria-current="page">Portfolio</a>', 1)
+open(f'{OUT}/portfolio.html', 'w').write(portfolio_page)
 print("portfolio items:", len(items), counts)
