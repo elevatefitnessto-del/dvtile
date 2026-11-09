@@ -463,3 +463,4 @@
 .work__ideas { margin-top: clamp(56px, 7vw, 104px); }
 .work__ideas h3 { margin: 0 0 8px; font: 500 clamp(1.35rem, 2vw, 1.75rem)/1.2 var(--font-ui); }
 .work__ideas > p { margin: 0 0 20px; max-width: 40rem; color: var(--muted); }
+.footer a[href^="tel:"], .contact-tel a { text-decoration: underline; text-decoration-color: var(--bronze); text-underline-offset: 0.2em; }
