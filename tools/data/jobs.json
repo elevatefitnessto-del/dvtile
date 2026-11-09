@@ -1,0 +1,482 @@
+[
+ {
+  "cat": "floors",
+  "full": "/assets/portfolio/job-45.webp",
+  "small": "/assets/portfolio/job-45-640.webp",
+  "alt": "Recent work: black and white marble chevron runner through a foyer",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Recent work: black and white marble chevron runner through a foyer"
+ },
+ {
+  "cat": "floors",
+  "full": "/assets/portfolio/job-47.webp",
+  "small": "/assets/portfolio/job-47-640.webp",
+  "alt": "Recent work: polished marble floor with black, white and grey geometric inlays, the edge still open to the substrate",
+  "w": 600,
+  "h": 800,
+  "badge": "Recent work",
+  "cap": "Recent work: polished marble floor with black, white and grey geometric inlays, the edge still open to the substrate"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-39.webp",
+  "small": "/assets/portfolio/job-39-640.webp",
+  "alt": "Recent work: marble-look porcelain walk-in shower with a black stone bench and mosaic pan",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Recent work: marble-look porcelain walk-in shower with a black stone bench and mosaic pan"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-44.webp",
+  "small": "/assets/portfolio/job-44-640.webp",
+  "alt": "Recent work: marble-look porcelain shower walls, black bench and mosaic floor",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Recent work: marble-look porcelain shower walls, black bench and mosaic floor"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-37.webp",
+  "small": "/assets/portfolio/job-37-640.webp",
+  "alt": "Recent work: black stone bench in a marble-look porcelain shower",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Recent work: black stone bench in a marble-look porcelain shower"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-40.webp",
+  "small": "/assets/portfolio/job-40-640.webp",
+  "alt": "Recent work: black stone bench and marble-look porcelain walls, from the shower entry",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Recent work: black stone bench and marble-look porcelain walls, from the shower entry"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-36.webp",
+  "small": "/assets/portfolio/job-36-640.webp",
+  "alt": "Recent work: marble-look porcelain shower walls, valve and diverter still to be trimmed",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Recent work: marble-look porcelain shower walls, valve and diverter still to be trimmed"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-43.webp",
+  "small": "/assets/portfolio/job-43-640.webp",
+  "alt": "Recent work: mosaic shower pan and marble-look porcelain walls, bathroom floor drain still open",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Recent work: mosaic shower pan and marble-look porcelain walls, bathroom floor drain still open"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-38.webp",
+  "small": "/assets/portfolio/job-38-640.webp",
+  "alt": "Recent work: black stone bench in a marble-look porcelain shower, lit from above",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Recent work: black stone bench in a marble-look porcelain shower, lit from above"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-10.webp",
+  "small": "/assets/portfolio/job-10-640.webp",
+  "alt": "Recent work: grey and white hexagon accent wall behind a powder-room vanity",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Recent work: grey and white hexagon accent wall behind a powder-room vanity"
+ },
+ {
+  "cat": "floors",
+  "full": "/assets/portfolio/job-48.webp",
+  "small": "/assets/portfolio/job-48-640.webp",
+  "alt": "Recent work: white subway tile laundry with a farmhouse sink and penny-round mosaic floor",
+  "w": 640,
+  "h": 429,
+  "badge": "Recent work",
+  "cap": "Recent work: white subway tile laundry with a farmhouse sink and penny-round mosaic floor"
+ },
+ {
+  "cat": "floors",
+  "full": "/assets/portfolio/job-13.webp",
+  "small": "/assets/portfolio/job-13-640.webp",
+  "alt": "Recent work: wood-look porcelain floor in a herringbone pattern, plumbing still stubbed through",
+  "w": 640,
+  "h": 480,
+  "badge": "Recent work",
+  "cap": "Recent work: wood-look porcelain floor in a herringbone pattern, plumbing still stubbed through"
+ },
+ {
+  "cat": "floors",
+  "full": "/assets/portfolio/job-17.webp",
+  "small": "/assets/portfolio/job-17-640.webp",
+  "alt": "Recent work: large-format marble-look porcelain in a hallway, protective film still at the wood transition",
+  "w": 640,
+  "h": 1138,
+  "badge": "Recent work",
+  "cap": "Recent work: large-format marble-look porcelain in a hallway, protective film still at the wood transition"
+ },
+ {
+  "cat": "kitchen",
+  "full": "/assets/portfolio/job-14.webp",
+  "small": "/assets/portfolio/job-14-640.webp",
+  "alt": "Recent work: white chevron tile kitchen backsplash over the sink. The field is set; the outlet is still open",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Recent work: white chevron tile kitchen backsplash over the sink. The field is set; the outlet is still open"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-41.webp",
+  "small": "/assets/portfolio/job-41-640.webp",
+  "alt": "Recent work: DV Tile installer standing in a finished marble-look porcelain shower with a black bench",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Recent work: DV Tile installer standing in a finished marble-look porcelain shower with a black bench"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-42.webp",
+  "small": "/assets/portfolio/job-42-640.webp",
+  "alt": "Recent work: same shower, a second view with the floor drain outside the curb",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Recent work: same shower, a second view with the floor drain outside the curb"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-08.webp",
+  "small": "/assets/portfolio/job-08-640.webp",
+  "alt": "Recent work: marble-look porcelain shower walls with leveling clips, mosaic pan and black bench",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Recent work: marble-look porcelain shower walls with leveling clips, mosaic pan and black bench"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-09.webp",
+  "small": "/assets/portfolio/job-09-640.webp",
+  "alt": "Recent work: leveling clips on marble-look porcelain shower walls above a mosaic pan",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Recent work: leveling clips on marble-look porcelain shower walls above a mosaic pan"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-35.webp",
+  "small": "/assets/portfolio/job-35-640.webp",
+  "alt": "Recent work: leveling clips on a marble-look porcelain shower, black bench and mosaic floor",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Recent work: leveling clips on a marble-look porcelain shower, black bench and mosaic floor"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-34.webp",
+  "small": "/assets/portfolio/job-34-640.webp",
+  "alt": "Recent work: walk-in shower from the doorway, leveling clips still on the walls",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Recent work: walk-in shower from the doorway, leveling clips still on the walls"
+ },
+ {
+  "cat": "floors",
+  "full": "/assets/portfolio/job-01.webp",
+  "small": "/assets/portfolio/job-01-640.webp",
+  "alt": "Recent work: marble-look porcelain hallway with leveling clips still in place",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Recent work: marble-look porcelain hallway with leveling clips still in place"
+ },
+ {
+  "cat": "floors",
+  "full": "/assets/portfolio/job-15.webp",
+  "small": "/assets/portfolio/job-15-640.webp",
+  "alt": "Recent work: wood-look porcelain planks with leveling clips, running toward a window",
+  "w": 640,
+  "h": 1138,
+  "badge": "Recent work",
+  "cap": "Recent work: wood-look porcelain planks with leveling clips, running toward a window"
+ },
+ {
+  "cat": "floors",
+  "full": "/assets/portfolio/job-16.webp",
+  "small": "/assets/portfolio/job-16-640.webp",
+  "alt": "Recent work: wood-look porcelain planks with leveling clips, from the other end of the room",
+  "w": 640,
+  "h": 1138,
+  "badge": "Recent work",
+  "cap": "Recent work: wood-look porcelain planks with leveling clips, from the other end of the room"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-07.webp",
+  "small": "/assets/portfolio/job-07-640.webp",
+  "alt": "Recent work: first courses of marble-look porcelain on a shower wall, membrane still exposed",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Recent work: first courses of marble-look porcelain on a shower wall, membrane still exposed"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-11.webp",
+  "small": "/assets/portfolio/job-11-640.webp",
+  "alt": "Recent work: glossy subway tile beside large-format wall tile, corner shelves set and thinset still open",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Recent work: glossy subway tile beside large-format wall tile, corner shelves set and thinset still open"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-12.webp",
+  "small": "/assets/portfolio/job-12-640.webp",
+  "alt": "Recent work: white elongated hex tile on shower walls, valves still stubbed out",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Recent work: white elongated hex tile on shower walls, valves still stubbed out"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-04.webp",
+  "small": "/assets/portfolio/job-04-640.webp",
+  "alt": "Prep and waterproofing: walk-in shower with a bench, walls wrapped in membrane, pan not yet floated",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Prep and waterproofing: walk-in shower with a bench, walls wrapped in membrane, pan not yet floated"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-25.webp",
+  "small": "/assets/portfolio/job-25-640.webp",
+  "alt": "Prep and waterproofing: membrane on the shower walls and bench, pan still rough",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Prep and waterproofing: membrane on the shower walls and bench, pan still rough"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-27.webp",
+  "small": "/assets/portfolio/job-27-640.webp",
+  "alt": "Prep and waterproofing: membrane-wrapped shower and bench under the ceiling light",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Prep and waterproofing: membrane-wrapped shower and bench under the ceiling light"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-28.webp",
+  "small": "/assets/portfolio/job-28-640.webp",
+  "alt": "Prep and waterproofing: membrane on the walls, bench and ceiling return",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Prep and waterproofing: membrane on the walls, bench and ceiling return"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-29.webp",
+  "small": "/assets/portfolio/job-29-640.webp",
+  "alt": "Prep and waterproofing: wider view of the membrane, bench and rough pan",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Prep and waterproofing: wider view of the membrane, bench and rough pan"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-05.webp",
+  "small": "/assets/portfolio/job-05-640.webp",
+  "alt": "Prep and waterproofing: shower pan floated smooth inside the membrane-wrapped walls",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Prep and waterproofing: shower pan floated smooth inside the membrane-wrapped walls"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-06.webp",
+  "small": "/assets/portfolio/job-06-640.webp",
+  "alt": "Prep and waterproofing: floated pan, with the marble-look bathroom floor in front of the curb",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Prep and waterproofing: floated pan, with the marble-look bathroom floor in front of the curb"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-30.webp",
+  "small": "/assets/portfolio/job-30-640.webp",
+  "alt": "Prep and waterproofing: floated shower pan, black curb and membrane on the bench",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Prep and waterproofing: floated shower pan, black curb and membrane on the bench"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-33.webp",
+  "small": "/assets/portfolio/job-33-640.webp",
+  "alt": "Prep and waterproofing: straight-on view of the floated pan and membrane-wrapped bench",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Prep and waterproofing: straight-on view of the floated pan and membrane-wrapped bench"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-31.webp",
+  "small": "/assets/portfolio/job-31-640.webp",
+  "alt": "Prep and waterproofing: closer view of the floated pan and the membrane seams",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Prep and waterproofing: closer view of the floated pan and the membrane seams"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-32.webp",
+  "small": "/assets/portfolio/job-32-640.webp",
+  "alt": "Prep and waterproofing: bench and floated pan from the left side of the shower",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Prep and waterproofing: bench and floated pan from the left side of the shower"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-26.webp",
+  "small": "/assets/portfolio/job-26-640.webp",
+  "alt": "Prep and waterproofing: lower angle of the membrane-wrapped shower and rough pan",
+  "w": 640,
+  "h": 480,
+  "badge": "Recent work",
+  "cap": "Prep and waterproofing: lower angle of the membrane-wrapped shower and rough pan"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-02.webp",
+  "small": "/assets/portfolio/job-02-640.webp",
+  "alt": "Prep: bathroom floor in marble-look porcelain, shower pan mortared around the drain",
+  "w": 640,
+  "h": 480,
+  "badge": "Recent work",
+  "cap": "Prep: bathroom floor in marble-look porcelain, shower pan mortared around the drain"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-23.webp",
+  "small": "/assets/portfolio/job-23-640.webp",
+  "alt": "Prep: wider view of the mortared shower pan and the tile already set outside it",
+  "w": 640,
+  "h": 480,
+  "badge": "Recent work",
+  "cap": "Prep: wider view of the mortared shower pan and the tile already set outside it"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-22.webp",
+  "small": "/assets/portfolio/job-22-640.webp",
+  "alt": "Prep: shower pan mortar and drain, with the first marble-look tiles at the threshold",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Prep: shower pan mortar and drain, with the first marble-look tiles at the threshold"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-03.webp",
+  "small": "/assets/portfolio/job-03-640.webp",
+  "alt": "Prep: corner of the same bathroom, pan mortar, drain and a valve stub",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Prep: corner of the same bathroom, pan mortar, drain and a valve stub"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-24.webp",
+  "small": "/assets/portfolio/job-24-640.webp",
+  "alt": "Prep: same corner from closer in, pan mortar and the start of the floor tile",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Prep: same corner from closer in, pan mortar and the start of the floor tile"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-18.webp",
+  "small": "/assets/portfolio/job-18-640.webp",
+  "alt": "Prep: shower pan mud bed next to marble-look floor tile, valve and diverter stubbed",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Prep: shower pan mud bed next to marble-look floor tile, valve and diverter stubbed"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-20.webp",
+  "small": "/assets/portfolio/job-20-640.webp",
+  "alt": "Prep: mud bed and floor tile, with a level against the wall",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Prep: mud bed and floor tile, with a level against the wall"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-21.webp",
+  "small": "/assets/portfolio/job-21-640.webp",
+  "alt": "Prep: the same mud bed from a step closer",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Prep: the same mud bed from a step closer"
+ },
+ {
+  "cat": "bath",
+  "full": "/assets/portfolio/job-19.webp",
+  "small": "/assets/portfolio/job-19-640.webp",
+  "alt": "Prep: mud bed and marble-look floor from above the doorway",
+  "w": 640,
+  "h": 853,
+  "badge": "Recent work",
+  "cap": "Prep: mud bed and marble-look floor from above the doorway"
+ },
+ {
+  "cat": "floors",
+  "full": "/assets/portfolio/job-46.webp",
+  "small": "/assets/portfolio/job-46-640.webp",
+  "alt": "Prep: black marble stair treads and landing, uncoupling membrane at the floor",
+  "w": 600,
+  "h": 800,
+  "badge": "Recent work",
+  "cap": "Prep: black marble stair treads and landing, uncoupling membrane at the floor"
+ }
+]
