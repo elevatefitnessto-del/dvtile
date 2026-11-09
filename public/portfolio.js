@@ -7,10 +7,10 @@
   const buttons = [...document.querySelectorAll(".pf-filter")];
   const count = document.querySelector(".pf-count");
 
-  const show = (cat) => {
+    const show = (cat) => {
     let n = 0;
     for (const li of items) {
-      const on = cat === "all" || li.dataset.cat === cat;
+      const on = cat === "all" || (cat === "recent" ? li.dataset.real === "1" : li.dataset.cat === cat);
       li.hidden = !on;
       if (on) n++;
     }
@@ -18,7 +18,8 @@
     count.textContent = `Showing ${n} ${n === 1 ? "photo" : "photos"}`;
   };
   for (const b of buttons) b.addEventListener("click", () => show(b.dataset.cat));
-  show("all");
+  const fromHash = location.hash === "#recent" ? "recent" : "all";
+  show(fromHash);
 
   const dialog = document.querySelector(".pf-dialog");
   if (!dialog || typeof dialog.showModal !== "function") return;
