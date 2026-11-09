@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="DV Tile">
+  <defs><clipPath id="dvm"><rect x="4" y="4" width="44.5" height="44.5" rx="1.2"/><rect x="51.5" y="4" width="44.5" height="44.5" rx="1.2"/><rect x="4" y="51.5" width="44.5" height="44.5" rx="1.2"/><rect x="51.5" y="51.5" width="44.5" height="44.5" rx="1.2"/></clipPath></defs>
+  <g fill="#22403a"><rect x="4" y="4" width="44.5" height="44.5" rx="1.2"/><rect x="51.5" y="4" width="44.5" height="44.5" rx="1.2"/><rect x="4" y="51.5" width="44.5" height="44.5" rx="1.2"/><rect x="51.5" y="51.5" width="44.5" height="44.5" rx="1.2"/></g>
+  <g clip-path="url(#dvm)">
+    <path fill="#b88a55" d="M-2 19 C 28 13, 40 38, 50 49 C 60 60, 72 85, 102 79 L 102 83.5 C 69 91, 55 66, 46.5 55 C 37.5 43, 27 21, -2 24.5 Z"/>
+    <path fill="#b88a55" d="M57 -2 C 59 15, 73 25, 102 22 L 102 23.6 C 71 27, 57 17, 55.4 -2 Z"/>
+    <path fill="#b88a55" d="M-2 66 C 14 63, 24 70, 30 102 L 28.4 102 C 22.5 72, 13 65.5, -2 67.6 Z"/>
+  </g>
+</svg>

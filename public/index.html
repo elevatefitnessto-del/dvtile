@@ -1,172 +1,465 @@
 <!doctype html>
 <html lang="en-CA">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DVTile | Private tile and stone showroom in Toronto</title>
-<meta name="description" content="DVTile is a private, by-appointment tile and natural stone showroom at 44 Jackes Avenue, Toronto. Marble, travertine, zellige, terrazzo and large-format porcelain.">
-<meta name="theme-color" content="#F2F2EF">
-<link rel="canonical" href="https://dvtile.ca/">
-<meta property="og:title" content="DVTile | Private tile and stone showroom in Toronto">
-<meta property="og:description" content="See the stone before it's set. Visits by appointment at 44 Jackes Avenue.">
-<meta property="og:url" content="https://dvtile.ca/">
-<meta property="og:type" content="website">
-<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/styles.css">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "HomeGoodsStore",
-  "name": "DVTile",
-  "legalName": "1000508858 Ontario Inc.",
-  "url": "https://dvtile.ca/",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "44 Jackes Avenue",
-    "addressLocality": "Toronto",
-    "addressRegion": "ON",
-    "addressCountry": "CA"
-  },
-  "description": "Private, by-appointment tile and natural stone showroom."
-}
-</script>
-<script type="importmap">
-{ "imports": {
-  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
-  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
-} }
-</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>DV Tile | Marble, Stone and Tile Flooring Contractor in Toronto</title>
+  <meta name="description" content="DV Tile installs marble, granite, natural stone, large-format porcelain and tile floors, showers and backsplashes for fine homes across Toronto and the GTA. Book a site visit.">
+  <meta name="theme-color" content="#14201d">
+  <link rel="canonical" href="https://dvtile.ca/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="DV Tile | Don Valley Tile">
+  <meta property="og:title" content="DV Tile | Stone and tile floors, installed to the millimetre">
+  <meta property="og:description" content="Marble, granite, natural stone and tile installation for fine homes across Toronto and the GTA.">
+  <meta property="og:url" content="https://dvtile.ca/">
+  <meta property="og:image" content="https://dvtile.ca/assets/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600&family=Pinyon+Script&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..400&display=swap">
+  <link rel="preload" as="image" href="/assets/house-bg.webp?v=1" fetchpriority="high">
+  <link rel="preload" as="image" href="/assets/house-fg.webp?v=1" fetchpriority="high">
+  <link rel="stylesheet" href="/styles.css?v=dv1">
+  <link rel="stylesheet" href="/tour.css?v=dv1">
+  <link rel="stylesheet" href="/site.css?v=dv1">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "@id": "https://dvtile.ca/#business",
+    "name": "DV Tile",
+    "alternateName": "Don Valley Tile",
+    "legalName": "1000508858 Ontario Inc.",
+    "url": "https://dvtile.ca/",
+    "image": "https://dvtile.ca/assets/og.jpg",
+    "description": "Flooring contractor installing marble, granite, natural stone, large-format porcelain and tile for fine homes across Toronto and the GTA.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "44 Jackes Avenue",
+      "addressLocality": "Toronto",
+      "addressRegion": "ON",
+      "addressCountry": "CA"
+    },
+    "areaServed": ["Toronto", "Forest Hill", "Rosedale", "Lawrence Park", "The Bridle Path", "Hoggs Hollow", "Yorkville", "Moore Park", "Leaside", "The Kingsway", "North York", "Vaughan", "Kleinburg", "King City", "Richmond Hill", "Markham", "Oakville", "Mississauga"],
+    "knowsAbout": ["Marble floor installation", "Natural stone flooring", "Granite installation", "Large-format porcelain slab installation", "Shower tile installation", "Kitchen backsplash installation", "Heated floors", "Stone restoration and polishing"],
+    "makesOffer": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Marble and natural stone floor installation"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Large-format porcelain and slab installation"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Shower and wet room tile installation"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Kitchen backsplash and feature wall installation"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Outdoor stone terraces and pool surrounds"}}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do you supply the stone and tile, or only install it?", "acceptedAnswer": {"@type": "Answer", "text": "Both. As an installation partner of Olympia Tile + Stone and Centura, we can order anything in their ranges and coordinate delivery to site. If your designer has already sourced material elsewhere, we install that too."}}, {"@type": "Question", "name": "Can you install marble or porcelain over in-floor heating?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We install electric heating mats under stone, porcelain and tile, test them with the thermostat before the floor goes down, and use an uncoupling membrane so the heat cycle does not crack joints."}}, {"@type": "Question", "name": "Do you work with interior designers, architects and builders?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Send drawings and finish schedules and we price from them, attend site meetings, and work to the designer’s layout and detailing."}}, {"@type": "Question", "name": "How do you keep large-format tile and slabs flat?", "acceptedAnswer": {"@type": "Answer", "text": "We check the floor for level first and correct it, then set each piece with full mortar coverage and a levelling system. The aim is lippage under a millimetre, which matters most with large panels and raking light from big windows."}}, {"@type": "Question", "name": "Which areas do you cover?", "acceptedAnswer": {"@type": "Answer", "text": "Toronto and the GTA, including Forest Hill, Rosedale, Lawrence Park, the Bridle Path, Hoggs Hollow, Yorkville, the Kingsway, Vaughan, Kleinburg, King City, Richmond Hill, Markham, Oakville and Mississauga."}}]}
+  </script>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
+  <a class="skip" href="#main">Skip to content</a>
+  <main class="page" id="main">
+    <section class="hero" id="hero" aria-labelledby="hero-title">
 
-<header class="nav">
-  <a class="wordmark" href="/" aria-label="DVTile home">DV<span>Tile</span></a>
-  <nav aria-label="Main">
-    <a href="#collection">Collection</a>
-    <a href="#showroom">Showroom</a>
-    <a href="#visit">Visit</a>
-  </nav>
-  <a class="btn btn-small" href="#visit">Book a visit</a>
-</header>
-
-<main id="main">
-  <section class="hero" aria-labelledby="hero-title">
-    <canvas class="hero-canvas" aria-hidden="true"></canvas>
-    <div class="hero-copy">
-      <h1 id="hero-title">See the stone before it’s set.</h1>
-      <p class="lede">A private tile and stone showroom on Jackes Avenue, Toronto. Visits are by appointment, so the room is yours while you choose.</p>
-      <a class="btn" href="#visit">Book a private appointment</a>
-    </div>
-    <div class="picker" role="group" aria-label="Show the slabs in">
-      <span class="picker-label" id="picker-label">Show the slabs in</span>
-      <div class="picker-options" aria-labelledby="picker-label"></div>
-    </div>
-  </section>
-
-  <section class="collection" id="collection" aria-labelledby="collection-title">
-    <div class="section-head">
-      <h2 id="collection-title">The collection</h2>
-      <p>Natural stone, handmade tile and large-format porcelain, chosen for kitchens, baths, entries and the floors between them. Every surface here is shown as full pieces, not chips on a ring.</p>
-    </div>
-    <ul class="swatches"></ul>
-    <p class="also">Also in the showroom: large-format porcelain slabs, mosaics, and trim in brushed and unlacquered metals.</p>
-  </section>
-
-  <section class="partners" aria-labelledby="partners-title">
-    <h2 id="partners-title" class="partners-label">Our partners</h2>
-    <ul class="partner-logos">
-      <li><a href="https://www.olympiatile.com/en/" rel="noopener" target="_blank"><img src="/assets/partners/olympia-tile-stone.svg" alt="Olympia Tile &amp; Stone" width="216" height="39" loading="lazy"></a></li>
-    </ul>
-  </section>
-
-  <section class="showroom" id="showroom" aria-labelledby="showroom-title">
-    <div class="showroom-intro">
-      <h2 id="showroom-title">One project in the room at a time.</h2>
-      <p>Choosing stone for a home is slow work. Veining that looks quiet in a sample can run loud across a floor; a glaze changes colour between morning and evening light. We book one appointment at a time so you can lay pieces side by side, take them to the window, and hold them against your cabinetry and paint.</p>
-      <p>Interior designers and architects are welcome with their clients, or on their own with drawings in hand.</p>
-    </div>
-    <ol class="steps" aria-label="How a visit works">
-      <li>
-        <h3>Book a time</h3>
-        <p>Tell us about the rooms and your timeline. We confirm an appointment by email.</p>
-      </li>
-      <li>
-        <h3>Bring the project</h3>
-        <p>Plans, measurements, a cabinet door, a paint chip. We pull materials before you arrive.</p>
-      </li>
-      <li>
-        <h3>Leave with samples and a quote</h3>
-        <p>Take pieces home to see in your own light. Quantities and lead times follow in writing.</p>
-      </li>
-    </ol>
-  </section>
-
-  <section class="visit" id="visit" aria-labelledby="visit-title">
-    <div class="visit-info">
-      <h2 id="visit-title">Visit the showroom</h2>
-      <address>
-        44 Jackes Avenue<br>
-        Toronto, Ontario
-      </address>
-      <p>In Deer Park, a short walk from St Clair station.</p>
-      <p><strong>By appointment only.</strong> Weekday, evening and Saturday times available on request.</p>
-      <p><a class="link" href="https://www.google.com/maps/search/?api=1&query=44+Jackes+Avenue+Toronto+ON" rel="noopener" target="_blank">Open in Google Maps</a></p>
-    </div>
-
-    <form class="form" id="appointment" novalidate>
-      <h3>Request an appointment</h3>
-      <div class="field">
-        <label for="f-name">Name</label>
-        <input id="f-name" name="name" autocomplete="name" required>
+      <!-- Layer 1: full photo (sky + house) -->
+      <div class="stage stage--bg" aria-hidden="true">
+        <img class="stage__img" src="/assets/house-bg.webp?v=1" width="1500" height="1200" alt="" decoding="async" fetchpriority="high">
+        <div class="stage__sky"></div>
       </div>
-      <div class="field-row">
-        <div class="field">
-          <label for="f-email">Email</label>
-          <input id="f-email" name="email" type="email" autocomplete="email" required>
-        </div>
-        <div class="field">
-          <label for="f-phone">Phone <span class="optional">(optional)</span></label>
-          <input id="f-phone" name="phone" type="tel" autocomplete="tel">
+
+      <!-- Layer 2: giant wordmark, sits behind the house -->
+      <h1 class="wordmark" id="hero-title" aria-label="DV Tile: marble, stone and tile flooring in Toronto">
+        <span class="wordmark__line" aria-hidden="true"><span class="wordmark__char" style="--i:0">D</span><span class="wordmark__char" style="--i:1">V</span><span class="wordmark__char" style="--i:2"> </span><span class="wordmark__char" style="--i:3">T</span><span class="wordmark__char" style="--i:4">I</span><span class="wordmark__char" style="--i:5">L</span><span class="wordmark__char" style="--i:6">E</span></span>
+      </h1>
+
+      <!-- Layer 3: house + trees cut out of the same photo -->
+      <div class="stage stage--fg" aria-hidden="true">
+        <img class="stage__img" src="/assets/house-fg.webp?v=1" width="1500" height="1200" alt="" decoding="async" fetchpriority="high">
+      </div>
+
+      <div class="hero__shade" aria-hidden="true"></div>
+
+      <!-- Layer 4: interface -->
+      <header class="nav" data-reveal>
+        <a class="brand" href="/" aria-label="DV Tile home">
+          <svg class="brand__mark" viewBox="0 0 100 100" aria-hidden="true"><defs><clipPath id="nav-mark"><rect x="4" y="4" width="44.5" height="44.5" rx="1.2"/><rect x="51.5" y="4" width="44.5" height="44.5" rx="1.2"/><rect x="4" y="51.5" width="44.5" height="44.5" rx="1.2"/><rect x="51.5" y="51.5" width="44.5" height="44.5" rx="1.2"/></clipPath></defs><g fill="#eceae4"><rect x="4" y="4" width="44.5" height="44.5" rx="1.2"/><rect x="51.5" y="4" width="44.5" height="44.5" rx="1.2"/><rect x="4" y="51.5" width="44.5" height="44.5" rx="1.2"/><rect x="51.5" y="51.5" width="44.5" height="44.5" rx="1.2"/></g><g clip-path="url(#nav-mark)"><path fill="#a9824f" d="M-2 19 C 28 13, 40 38, 50 49 C 60 60, 72 85, 102 79 L 102 83.5 C 69 91, 55 66, 46.5 55 C 37.5 43, 27 21, -2 24.5 Z"/><path fill="#bfa27a" d="M57 -2 C 59 15, 73 25, 102 22 L 102 23.6 C 71 27, 57 17, 55.4 -2 Z"/><path fill="#bfa27a" d="M-2 66 C 14 63, 24 70, 30 102 L 28.4 102 C 22.5 72, 13 65.5, -2 67.6 Z"/></g></svg>
+          <span class="brand__words"><span class="brand__name">DV TILE</span><span class="brand__script">Don Valley Tile</span></span>
+        </a>
+
+        <nav class="nav__links" aria-label="Primary" data-glass data-glass-refraction="80" data-glass-depth="20" data-glass-dispersion="50" data-glass-frost="4">
+          <a class="nav__link" href="#tour">The house</a>
+          <a class="nav__link" href="#services">Services</a>
+          <a class="nav__link" href="#materials">Products</a>
+          <a class="nav__link" href="#process">Process</a>
+          <a class="nav__link" href="#areas">Areas</a>
+        </nav>
+
+        <a class="cta" href="#contact">
+          <span>Book a site visit</span>
+          <span class="cta__icon" aria-hidden="true">
+            <svg viewBox="0 0 16 16"><rect x="2.5" y="2.5" width="4.5" height="4.5" fill="currentColor"/><rect x="9" y="9" width="4.5" height="4.5" fill="currentColor"/></svg>
+          </span>
+        </a>
+
+        <button class="menu-btn" type="button" data-glass data-glass-refraction="80" data-glass-depth="20" data-glass-dispersion="50" data-glass-frost="4" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </header>
+
+      <div class="mobile-menu" id="mobile-menu" hidden data-glass data-glass-refraction="80" data-glass-depth="20" data-glass-dispersion="50" data-glass-frost="4">
+        <a href="#tour">The house</a>
+        <a href="#services">Services</a>
+        <a href="#materials">Products</a>
+        <a href="#process">Process</a>
+        <a href="#areas">Areas we serve</a>
+        <a class="mobile-menu__cta" href="#contact">Book a site visit</a>
+      </div>
+
+      <nav class="index" data-reveal aria-label="Materials we install">
+        <a class="index__row" href="#materials" data-glass data-glass-refraction="80" data-glass-depth="20" data-glass-dispersion="50" data-glass-frost="4"><span class="index__label">Marble</span></a>
+        <a class="index__row" href="#materials" data-glass data-glass-refraction="80" data-glass-depth="20" data-glass-dispersion="50" data-glass-frost="4"><span class="index__label">Granite</span></a>
+        <a class="index__row" href="#materials" data-glass data-glass-refraction="80" data-glass-depth="20" data-glass-dispersion="50" data-glass-frost="4"><span class="index__label">Natural stone</span></a>
+        <a class="index__row" href="#materials" data-glass data-glass-refraction="80" data-glass-depth="20" data-glass-dispersion="50" data-glass-frost="4"><span class="index__label">Porcelain slab</span></a>
+      </nav>
+
+      <div class="foot">
+        <a class="feature" href="#tour" data-reveal data-glass data-glass-refraction="80" data-glass-depth="20" data-glass-dispersion="50" data-glass-frost="32">
+          <span class="feature__eyebrow"><span class="feature__live" aria-hidden="true"></span>Up close</span>
+          <span class="feature__name">The Forest Hill house</span>
+          <span class="feature__place">A concept home, finished in the stone we install</span>
+          <span class="feature__specs"><span>Inlays</span><span>Backsplashes</span><span>Niches</span><span>LED</span></span>
+          <span class="feature__foot">
+            <span class="feature__price">8 details</span>
+            <span class="feature__go">Look closer</span>
+          </span>
+        </a>
+
+        <div class="lede" data-reveal>
+          <p>Marble, granite, natural stone and tile, installed for fine homes across Toronto and the GTA.</p>
+          <a class="lede__link" href="#contact">Book a site visit</a>
         </div>
       </div>
-      <div class="field-row">
-        <div class="field">
-          <label for="f-project">Project</label>
-          <select id="f-project" name="project">
-            <option>Kitchen</option>
-            <option>Bathroom or ensuite</option>
-            <option>Floors throughout</option>
-            <option>Whole-home renovation</option>
-            <option>New build</option>
-            <option>Trade or designer enquiry</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="f-date">Preferred date</label>
-          <input id="f-date" name="date" type="date">
-        </div>
-      </div>
-      <div class="field">
-        <label for="f-message">About the project <span class="optional">(optional)</span></label>
-        <textarea id="f-message" name="message" rows="4" placeholder="Rooms, rough square footage, materials you're drawn to, timeline."></textarea>
-      </div>
-      <div class="hp" aria-hidden="true"><label>Leave empty <input name="company" tabindex="-1" autocomplete="off"></label></div>
-      <button class="btn" type="submit">Request appointment</button>
-      <p class="form-status" role="status" aria-live="polite"></p>
-    </form>
-  </section>
-</main>
+    </section>
 
-<footer class="footer">
-  <p class="wordmark" aria-hidden="true">DV<span>Tile</span></p>
-  <p>44 Jackes Avenue, Toronto, Ontario. By appointment.</p>
-  <p class="legal">DVTile is operated by 1000508858 Ontario Inc. © <span id="year">2026</span></p>
-</footer>
+    <!-- Walkthrough: one take through the details of the concept house, scrubbed by scroll -->
+    <section class="tour" id="tour" data-frames="281" data-version="2" aria-labelledby="tour-title">
+      <div class="tour__sticky">
+        <canvas class="tour__canvas" aria-hidden="true"></canvas>
+        <img class="tour__poster" src="/assets/tour/poster.webp?v=2" width="1600" height="900" alt="" decoding="async" loading="lazy">
+        <div class="tour__shade" aria-hidden="true"></div>
 
-<script type="module" src="/assets/main.js"></script>
+        <ol class="tour__beats">
+          <li class="beat beat--intro" data-at="0" id="tour-intro">
+            <p class="beat__eyebrow">Entry hall</p>
+            <h2 class="beat__title beat__title--xl" id="tour-title">Custom floor inlay</h2>
+            <p class="beat__sub">Waterjet-cut Calacatta, Nero Marquina and Breccia, ringed in solid brass. Scroll to look closer.</p>
+            <span class="beat__cue" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M12 7v9.5M8 13l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </li>
+          <li class="beat beat--left" data-at="1">
+            <p class="beat__eyebrow">Living room</p>
+            <h2 class="beat__title">Transitions<br>done right</h2>
+            <p class="beat__sub">Limestone herringbone meets a Calacatta Viola hearth along an inset brass strip.</p>
+          </li>
+          <li class="beat beat--right" data-at="2">
+            <p class="beat__eyebrow">Kitchen</p>
+            <h2 class="beat__title">The<br>backsplash</h2>
+            <p class="beat__sub">Book-matched quartzite, full height, washed by an LED strip hidden under a stone ledge.</p>
+          </li>
+          <li class="beat beat--low-left" data-at="3">
+            <p class="beat__eyebrow">Powder room</p>
+            <h2 class="beat__title">Verde Alpi,<br>lit from below</h2>
+            <p class="beat__sub">Mitred serpentine slab and a carved stone basin, with LED tucked under the floating shelf.</p>
+          </li>
+          <li class="beat beat--right" data-at="4">
+            <p class="beat__eyebrow">Primary shower</p>
+            <h2 class="beat__title">The custom<br>niche</h2>
+            <p class="beat__sub">Cut into the slab, mitred at 45 degrees and lit from inside, beside a brushed brass valve.</p>
+          </li>
+          <li class="beat beat--left" data-at="5">
+            <p class="beat__eyebrow">Steam shower</p>
+            <h2 class="beat__title">Premium<br>fixtures</h2>
+            <p class="beat__sub">Brass rainhead, handheld and linear drain, with an LED cove, all over full waterproofing.</p>
+          </li>
+          <li class="beat beat--low-right" data-at="6">
+            <p class="beat__eyebrow">Ensuite at night</p>
+            <h2 class="beat__title">Lit by LED</h2>
+            <p class="beat__sub">Under-vanity and cove lighting planned with the stone layout, not added after.</p>
+          </li>
+          <li class="beat beat--end" data-at="7">
+            <p class="beat__eyebrow">Pool terrace</p>
+            <h2 class="beat__title">Built for<br>Toronto winters</h2>
+            <p class="beat__sub">Thermal limestone coping and flamed granite steps with LED step lights, rated for freeze and thaw.</p>
+            <a class="beat__cta" href="#contact">Book a site visit</a>
+          </li>
+        </ol>
+
+        <div class="tour__progress" aria-hidden="true"><span></span></div>
+        <span class="tour__dot" aria-hidden="true"></span>
+      </div>
+    </section>
+
+    <div class="sheet">
+      <section class="services" id="services" aria-labelledby="services-title">
+        <div class="section-head">
+          <h2 id="services-title">What we install</h2>
+          <p>We are installers first. One crew lays out, prepares and sets every surface in your home, from the entry floor to the shower ceiling, and stays on the job until the last joint is sealed.</p>
+        </div>
+        <ul class="service-list">
+          <li>
+            <h3>Marble and natural stone floors</h3>
+            <p>Calacatta, Carrara, Nero Marquina, travertine, limestone and slate, in tile or full slab. Book-matched, vein-matched and laid to a plan you approve before we cut.</p>
+          </li>
+          <li>
+            <h3>Large-format porcelain and slabs</h3>
+            <p>Panels up to 160 × 320 cm for floors, walls and fireplaces. Levelling systems and full mortar coverage keep lippage under a millimetre across the room.</p>
+          </li>
+          <li>
+            <h3>Showers and wet rooms</h3>
+            <p>Curbless entries, linear drains, benches, niches and steam rooms. Every shower is waterproofed and flood-tested before tile goes on.</p>
+          </li>
+          <li>
+            <h3>Kitchen backsplashes and feature walls</h3>
+            <p>Full-height slab, zellige, mosaic and 3D tile, with outlets, window returns and range hoods scribed in rather than worked around.</p>
+          </li>
+          <li>
+            <h3>Heated floors</h3>
+            <p>Electric in-floor heating under stone and porcelain, installed and tested with the thermostat before the floor is set.</p>
+          </li>
+          <li>
+            <h3>Terraces, pools and outdoor stone</h3>
+            <p>Thermal limestone, flamed granite and 2 cm outdoor porcelain on terraces, steps and pool surrounds, built to handle freeze and thaw.</p>
+          </li>
+          <li>
+            <h3>Stairs, fireplaces and details</h3>
+            <p>Solid stone treads, mitred risers, fireplace surrounds, thresholds and metal trims finished by hand.</p>
+          </li>
+          <li>
+            <h3>Restoration and polishing</h3>
+            <p>Honing, polishing, crack repair and sealing for marble and stone floors that have lost their finish.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="materials" id="materials" aria-labelledby="materials-title">
+        <div class="section-head">
+          <h2 id="materials-title">Every Olympia product, installed by us</h2>
+          <p>Olympia Tile + Stone is our main supply partner. Anything in their tile, stone and slab catalogue, we can order, deliver and install, alongside the Centura range. Browse their collections, note what you like, and bring it to the site visit.</p>
+        </div>
+        <div class="catalogue">
+          <div class="catalogue__group">
+            <h3><a href="https://www.olympiatile.com/en/tile-stone/explore-by-look.html" rel="noopener" target="_blank">Tile and stone by look</a></h3>
+            <ul>
+              <li><a href="https://www.olympiatile.com/en/tile-stone/explore-by-look/stone-replica.html" rel="noopener" target="_blank">Stone replica</a></li>
+              <li><a href="https://www.olympiatile.com/en/tile-stone/explore-by-look/stone-replica/marble-replica.html" rel="noopener" target="_blank">Marble replica</a></li>
+              <li><a href="https://www.olympiatile.com/en/tile-stone/explore-by-look/natural-stone.html" rel="noopener" target="_blank">Natural stone</a></li>
+              <li><a href="https://www.olympiatile.com/en/tile-stone/explore-by-look/wood-replica.html" rel="noopener" target="_blank">Wood replica</a></li>
+              <li><a href="https://www.olympiatile.com/en/tile-stone/explore-by-look/cement-replica.html" rel="noopener" target="_blank">Cement replica</a></li>
+              <li><a href="https://www.olympiatile.com/en/tile-stone/explore-by-look/terrazzo-replica.html" rel="noopener" target="_blank">Terrazzo replica</a></li>
+              <li><a href="https://www.olympiatile.com/en/tile-stone/explore-by-look/striated-design.html" rel="noopener" target="_blank">Striated</a></li>
+              <li><a href="https://www.olympiatile.com/en/tile-stone/explore-by-look/mosaics.html" rel="noopener" target="_blank">Mosaics</a></li>
+              <li><a href="https://www.olympiatile.com/en/tile-stone/explore-by-look/subway-tile.html" rel="noopener" target="_blank">Subway</a></li>
+              <li><a href="https://www.olympiatile.com/en/tile-stone/explore-by-look/3d.html" rel="noopener" target="_blank">3D decor</a></li>
+            </ul>
+          </div>
+          <div class="catalogue__group">
+            <h3><a href="https://www.olympiatile.com/en/tile-stone/explore-by-use.html" rel="noopener" target="_blank">Tile and stone by room</a></h3>
+            <ul>
+              <li><a href="https://www.olympiatile.com/en/tile-stone/explore-by-use/kitchen.html" rel="noopener" target="_blank">Kitchen</a></li>
+              <li><a href="https://www.olympiatile.com/en/tile-stone/explore-by-use/bathroom.html" rel="noopener" target="_blank">Bathroom</a></li>
+              <li><a href="https://www.olympiatile.com/en/tile-stone/explore-by-use/shower.html" rel="noopener" target="_blank">Shower</a></li>
+              <li><a href="https://www.olympiatile.com/en/tile-stone/explore-by-use/backsplash.html" rel="noopener" target="_blank">Backsplash</a></li>
+              <li><a href="https://www.olympiatile.com/en/tile-stone/explore-by-use/floors.html" rel="noopener" target="_blank">Floors</a></li>
+              <li><a href="https://www.olympiatile.com/en/tile-stone/explore-by-use/wall-tiles.html" rel="noopener" target="_blank">Walls</a></li>
+              <li><a href="https://www.olympiatile.com/en/tile-stone/explore-by-use/shower-jambs.html" rel="noopener" target="_blank">Shower jambs</a></li>
+              <li><a href="https://www.olympiatile.com/en/tile-stone/explore-by-use/outdoors.html" rel="noopener" target="_blank">Outdoors</a></li>
+              <li><a href="https://www.olympiatile.com/en/tile-stone/explore-by-use/pool.html" rel="noopener" target="_blank">Pool</a></li>
+            </ul>
+          </div>
+          <div class="catalogue__group">
+            <h3><a href="https://www.olympiatile.com/en/tile-stone/explore-by-material.html" rel="noopener" target="_blank">Tile by material</a></h3>
+            <ul>
+              <li><a href="https://www.olympiatile.com/en/tile-stone/explore-by-material/porcelain.html" rel="noopener" target="_blank">Porcelain</a></li>
+              <li><a href="https://www.olympiatile.com/en/tile-stone/explore-by-material/ceramic.html" rel="noopener" target="_blank">Ceramic</a></li>
+              <li><a href="https://www.olympiatile.com/en/tile-stone/explore-by-material/quarry.html" rel="noopener" target="_blank">Quarry</a></li>
+              <li><a href="https://www.olympiatile.com/en/tile-stone/explore-by-material/glass.html" rel="noopener" target="_blank">Glass</a></li>
+              <li><a href="https://www.olympiatile.com/en/tile-stone/explore-by-material/spc-lvt-vinyl.html" rel="noopener" target="_blank">LVT and SPC</a></li>
+              <li><a href="https://www.olympiatile.com/en/tile-stone/explore-by-material/metal-mouldings.html" rel="noopener" target="_blank">Metal mouldings</a></li>
+            </ul>
+          </div>
+          <div class="catalogue__group">
+            <h3><a href="https://www.olympiatile.com/en/slab-division.html" rel="noopener" target="_blank">Slabs by stone</a></h3>
+            <ul>
+              <li><a href="https://www.olympiatile.com/en/slab-division/explore-by-material/marble.html" rel="noopener" target="_blank">Marble</a></li>
+              <li><a href="https://www.olympiatile.com/en/slab-division/explore-by-material/granite.html" rel="noopener" target="_blank">Granite</a></li>
+              <li><a href="https://www.olympiatile.com/en/slab-division/explore-by-material/quartzite.html" rel="noopener" target="_blank">Quartzite</a></li>
+              <li><a href="https://www.olympiatile.com/en/slab-division/explore-by-material/limestone.html" rel="noopener" target="_blank">Limestone</a></li>
+              <li><a href="https://www.olympiatile.com/en/slab-division/explore-by-material/travertine.html" rel="noopener" target="_blank">Travertine</a></li>
+              <li><a href="https://www.olympiatile.com/en/slab-division/explore-by-material/slate.html" rel="noopener" target="_blank">Slate</a></li>
+              <li><a href="https://www.olympiatile.com/en/slab-division/explore-by-material/engineered-quartz.html" rel="noopener" target="_blank">Engineered quartz</a></li>
+              <li><a href="https://www.olympiatile.com/en/slab-division/explore-by-material/semi-precious-stone.html" rel="noopener" target="_blank">Semi-precious stone</a></li>
+            </ul>
+          </div>
+          <div class="catalogue__group">
+            <h3><a href="https://www.olympiatile.com/en/slab-division/explore-by-finish.html" rel="noopener" target="_blank">Slabs by finish</a></h3>
+            <ul>
+              <li><a href="https://www.olympiatile.com/en/slab-division/explore-by-finish/polished.html" rel="noopener" target="_blank">Polished</a></li>
+              <li><a href="https://www.olympiatile.com/en/slab-division/explore-by-finish/honed.html" rel="noopener" target="_blank">Honed</a></li>
+              <li><a href="https://www.olympiatile.com/en/slab-division/explore-by-finish/leathered.html" rel="noopener" target="_blank">Leathered</a></li>
+              <li><a href="https://www.olympiatile.com/en/slab-division/explore-by-finish/matte.html" rel="noopener" target="_blank">Matte</a></li>
+              <li><a href="https://www.olympiatile.com/en/slab-division/explore-by-finish/flamed.html" rel="noopener" target="_blank">Flamed</a></li>
+              <li><a href="https://www.olympiatile.com/en/slab-division/explore-by-finish/brushed.html" rel="noopener" target="_blank">Brushed</a></li>
+              <li><a href="https://www.olympiatile.com/en/slab-division/explore-by-finish/antiqued.html" rel="noopener" target="_blank">Antiqued</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="partner-band">
+          <a class="partner-band__logo" href="https://www.olympiatile.com/en/" rel="noopener" target="_blank" aria-label="Olympia Tile + Stone, opens their website"><img src="/assets/partners/olympia-tile-stone-white.svg" alt="Olympia Tile + Stone" width="216" height="39" loading="lazy"></a>
+          <p>Official installation partner. Product names, availability and specifications are Olympia’s; we confirm them with you before ordering.</p>
+          <a class="partner-band__link" href="https://www.olympiatile.com/en/tile-stone.html" rel="noopener" target="_blank">Browse the full Olympia catalogue</a>
+          <a class="partner-band__link partner-band__link--quiet" href="https://www.centura.ca/en/" rel="noopener" target="_blank">Centura</a>
+        </div>
+      </section>
+
+      <section class="process" id="process" aria-labelledby="process-title">
+        <div class="section-head">
+          <h2 id="process-title">How a project runs</h2>
+          <p>Stone is unforgiving. Most of the work that makes a floor look effortless happens before the first piece is set.</p>
+        </div>
+        <ol class="steps">
+          <li>
+            <h3>Site visit</h3>
+            <p>We measure, check the subfloor and walls for level and moisture, and talk through the rooms, the materials and your schedule.</p>
+          </li>
+          <li>
+            <h3>Layout and quote</h3>
+            <p>You get a written quote and a layout drawing showing where every joint, cut and vein falls. Slabs are dry-laid for your approval before cutting.</p>
+          </li>
+          <li>
+            <h3>Preparation</h3>
+            <p>Levelling, uncoupling membranes, waterproofing and heating go in first, each one tested before it is covered.</p>
+          </li>
+          <li>
+            <h3>Installation</h3>
+            <p>The same crew sets every surface, with finished floors protected and the site cleaned at the end of each day.</p>
+          </li>
+          <li>
+            <h3>Sealing and handover</h3>
+            <p>Grout and stone are sealed, and you get a care guide for each material in your home.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="areas" id="areas" aria-labelledby="areas-title">
+        <div class="section-head">
+          <h2 id="areas-title">Where we work</h2>
+          <p>Homes, renovations and new builds across Toronto and the Greater Toronto Area, for homeowners, designers, architects and builders.</p>
+        </div>
+        <ul class="area-list">
+          <li>Forest Hill</li><li>Rosedale</li><li>Lawrence Park</li><li>The Bridle Path</li><li>Hoggs Hollow</li><li>Yorkville</li><li>Moore Park</li><li>Leaside</li><li>The Kingsway</li><li>North York</li><li>Vaughan</li><li>Kleinburg</li><li>King City</li><li>Richmond Hill</li><li>Markham</li><li>Oakville</li><li>Mississauga</li>
+        </ul>
+      </section>
+
+      <section class="faq" id="faq" aria-labelledby="faq-title">
+        <div class="section-head">
+          <h2 id="faq-title">Questions we hear</h2>
+          <p>If yours isn’t here, add it to the site visit request and we’ll answer it before we meet.</p>
+        </div>
+        <div class="faq__list">
+          <details class="faq__item">
+            <summary>Do you supply the stone and tile, or only install it?</summary>
+            <p>Both. As an installation partner of Olympia Tile + Stone and Centura, we can order anything in their ranges and coordinate delivery to site. If your designer has already sourced material elsewhere, we install that too.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Can you install marble or porcelain over in-floor heating?</summary>
+            <p>Yes. We install electric heating mats under stone, porcelain and tile, test them with the thermostat before the floor goes down, and use an uncoupling membrane so the heat cycle does not crack joints.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Do you work with interior designers, architects and builders?</summary>
+            <p>Yes. Send drawings and finish schedules and we price from them, attend site meetings, and work to the designer’s layout and detailing.</p>
+          </details>
+          <details class="faq__item">
+            <summary>How do you keep large-format tile and slabs flat?</summary>
+            <p>We check the floor for level first and correct it, then set each piece with full mortar coverage and a levelling system. The aim is lippage under a millimetre, which matters most with large panels and raking light from big windows.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Which areas do you cover?</summary>
+            <p>Toronto and the GTA, including Forest Hill, Rosedale, Lawrence Park, the Bridle Path, Hoggs Hollow, Yorkville, the Kingsway, Vaughan, Kleinburg, King City, Richmond Hill, Markham, Oakville and Mississauga.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div class="contact-info">
+          <h2 id="contact-title">Book a site visit</h2>
+          <p>Tell us about the rooms and your timeline. We reply within one business day to arrange a time to see the space.</p>
+          <address>
+            DV Tile<br>
+            44 Jackes Avenue<br>
+            Toronto, Ontario
+          </address>
+          <p>Designers, architects and builders are welcome to send drawings for pricing.</p>
+        </div>
+
+        <form class="form" id="appointment" novalidate>
+          <div class="field">
+            <label for="f-name">Name</label>
+            <input id="f-name" name="name" autocomplete="name" required>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="f-phone">Phone <span class="optional">(optional)</span></label>
+              <input id="f-phone" name="phone" type="tel" autocomplete="tel">
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-project">Project</label>
+              <select id="f-project" name="project">
+                <option>Floors throughout</option>
+                <option>Bathroom, ensuite or shower</option>
+                <option>Kitchen backsplash</option>
+                <option>Whole-home renovation</option>
+                <option>New build</option>
+                <option>Terrace or pool</option>
+                <option>Stone restoration</option>
+                <option>Designer, architect or builder</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-date">Preferred visit date <span class="optional">(optional)</span></label>
+              <input id="f-date" name="date" type="date">
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-message">About the project <span class="optional">(optional)</span></label>
+            <textarea id="f-message" name="message" rows="4" placeholder="Neighbourhood, rooms, rough square footage, materials you have chosen or like."></textarea>
+          </div>
+          <div class="hp" aria-hidden="true"><label>Leave empty <input name="company" tabindex="-1" autocomplete="off"></label></div>
+          <button class="btn" type="submit">Request a site visit</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__lockup" aria-hidden="true"><svg class="footer__logo" viewBox="0 0 100 100" aria-hidden="true"><defs><clipPath id="foot-mark"><rect x="4" y="4" width="44.5" height="44.5" rx="1.2"/><rect x="51.5" y="4" width="44.5" height="44.5" rx="1.2"/><rect x="4" y="51.5" width="44.5" height="44.5" rx="1.2"/><rect x="51.5" y="51.5" width="44.5" height="44.5" rx="1.2"/></clipPath></defs><g fill="#22403a"><rect x="4" y="4" width="44.5" height="44.5" rx="1.2"/><rect x="51.5" y="4" width="44.5" height="44.5" rx="1.2"/><rect x="4" y="51.5" width="44.5" height="44.5" rx="1.2"/><rect x="51.5" y="51.5" width="44.5" height="44.5" rx="1.2"/></g><g clip-path="url(#foot-mark)"><path fill="#b88a55" d="M-2 19 C 28 13, 40 38, 50 49 C 60 60, 72 85, 102 79 L 102 83.5 C 69 91, 55 66, 46.5 55 C 37.5 43, 27 21, -2 24.5 Z"/><path fill="#b88a55" d="M57 -2 C 59 15, 73 25, 102 22 L 102 23.6 C 71 27, 57 17, 55.4 -2 Z"/><path fill="#b88a55" d="M-2 66 C 14 63, 24 70, 30 102 L 28.4 102 C 22.5 72, 13 65.5, -2 67.6 Z"/></g></svg><div><p class="footer__mark">DV TILE</p><p class="footer__script">Don Valley Tile</p></div></div>
+        <p>Marble, granite, natural stone and tile installation. 44 Jackes Avenue, Toronto, Ontario.</p>
+        <p class="legal">DV Tile is operated by 1000508858 Ontario Inc. © <span id="year">2026</span>. Rooms in the walkthrough are a rendered concept home showing materials we install.</p>
+      </footer>
+    </div>
+  </main>
+  <a class="dock" href="#contact" hidden>Book a site visit</a>
+  <script src="/hero.js?v=dv1" defer></script>
+  <script src="/glass.js?v=dv1" defer></script>
+  <script src="/tour.js?v=dv1" defer></script>
+  <script src="/pager.js?v=dv1" defer></script>
+  <script src="/form.js?v=dv1" defer></script>
 </body>
 </html>
