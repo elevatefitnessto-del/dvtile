@@ -76,14 +76,14 @@ p { margin: 0; }
 }
 
 .hero {
-  /* Mirrors layout() in hero.js for the 1536x1024 rooftop photo:
-     ASPECT 1.5, ROOF_Y 0.462, HOUSE_CX 0.6 (0.53 on phones), roof target 44% (53%). */
+  /* Mirrors layout() in hero.js for the 2048x1143 limestone house photo:
+     ASPECT 1.7918, ROOF_Y 0.333, HOUSE_CX 0.5, roof target 44% (53% on phones). */
   --hw: calc(100vw - 2 * var(--inset));
   --hh: max(calc(100svh - 2 * var(--inset)), 520px);
-  --sw: max(var(--hw), calc(var(--hh) * 1.5));
-  --sh: calc(var(--sw) / 1.5);
-  --sx: clamp(calc(var(--hw) - var(--sw)), calc(var(--hw) / 2 - 0.6 * var(--sw)), 0px);
-  --sy: clamp(calc(var(--hh) - var(--sh)), calc(var(--hh) * 0.44 - 0.462 * var(--sh)), 0px);
+  --sw: max(var(--hw), calc(var(--hh) * 1.7918));
+  --sh: calc(var(--sw) / 1.7918);
+  --sx: clamp(calc(var(--hw) - var(--sw)), calc(var(--hw) / 2 - 0.5 * var(--sw)), 0px);
+  --sy: clamp(calc(var(--hh) - var(--sh)), calc(var(--hh) * 0.44 - 0.333 * var(--sh)), 0px);
   position: relative;
   isolation: isolate;
   height: calc(100svh - 2 * var(--inset));
@@ -145,7 +145,7 @@ p { margin: 0; }
   font-size: var(--wm-size, 30vw);
   line-height: 1;
   letter-spacing: 0.04em;
-  color: var(--verde-deep); /* deep green reads against the bright sunset sky */
+  color: var(--calacatta); /* light letters against the deep evening sky */
   white-space: nowrap;
   transform: translate(var(--wm-x, 6vw), var(--wm-y, 10vh));
   pointer-events: none;
@@ -648,8 +648,8 @@ p { margin: 0; }
 
 @media (max-width: 699px) {
   .hero {
-    --sx: clamp(calc(var(--hw) - var(--sw)), calc(var(--hw) / 2 - 0.53 * var(--sw)), 0px);
-    --sy: clamp(calc(var(--hh) - var(--sh)), calc(var(--hh) * 0.53 - 0.462 * var(--sh)), 0px);
+    --sx: clamp(calc(var(--hw) - var(--sw)), calc(var(--hw) / 2 - 0.5 * var(--sw)), 0px);
+    --sy: clamp(calc(var(--hh) - var(--sh)), calc(var(--hh) * 0.53 - 0.333 * var(--sh)), 0px);
   }
 }
 

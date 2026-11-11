@@ -10,13 +10,13 @@
 
   root.classList.add("js");
 
-  // Photo geometry, in fractions of the 1536x1024 rooftop source.
-  const ASPECT = 1536 / 1024;
-  const ROOF_Y = 0.462; // skyline height // top edge of the roof slab
-  const HOUSE_CX = 0.6; // centre of the open sky, right of the glass tower // horizontal centre of the house
-  const CLIP_Y = 0.495; // just below the tallest skyline buildings
-  const SKY_L = 0.27; // right edge of the glass tower on the left
-  const SKY_R = 0.97; // just below the lowest roof edge; hides letter slivers in the side gaps
+  // Photo geometry, in fractions of the 2048x1143 limestone house source.
+  const ASPECT = 2048 / 1143;
+  const ROOF_Y = 0.333; // top of the flat roof
+  const HOUSE_CX = 0.5; // centre of the house
+  const CLIP_Y = 0.36; // bottom of the roof fascia
+  const SKY_L = 0.13; // inside edge of the left maple
+  const SKY_R = 0.87; // inside edge of the right maple
 
   const clamp = (v, min, max) => Math.min(Math.max(v, min), max);
 
@@ -42,7 +42,7 @@
     const sh = sw / ASPECT;
     const roofTarget = H * (mobile ? 0.53 : 0.44);
     const sy = clamp(roofTarget - ROOF_Y * sh, H - sh, 0);
-    const sx = clamp(W / 2 - (mobile ? 0.53 : HOUSE_CX) * sw, W - sw, 0); // on phones the tower falls between V and T
+    const sx = clamp(W / 2 - HOUSE_CX * sw, W - sw, 0);
     const roof = sy + ROOF_Y * sh;
 
     hero.style.setProperty("--sw", `${sw}px`);
@@ -54,7 +54,7 @@
 
     // Size the wordmark to the width first, then cap it so the tallest
     // letters stay clear of the navigation.
-    // The open sky runs from the glass tower (SKY_L) to the right edge (SKY_R) of the photo.
+    // The open sky runs between the two maples (SKY_L to SKY_R) of the photo.
     // Fit the letters inside the part of that sky that is on screen.
     const skyL = Math.max(sx + SKY_L * sw, W * (mobile ? 0.07 : 0.03));
     const skyR = Math.min(sx + SKY_R * sw, W * (mobile ? 0.93 : 0.97));
